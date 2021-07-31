@@ -1,15 +1,4 @@
-:root{
-  --titleColor:#fff;
-  --btnBg:#0087c1;
-  --btnBgHover:#28a5db;
-  --btnColor:#fff;
-  --boxShadow:rgba(17, 17, 17, 0.103);
-  --articleBg:#F7FBFF;
-  --articleLittleBg:#fff;
-  --articleBorder:#363377;
-  --articleColor:#41417C;
-  --qnaColor:#413DA3;
-}
+
 .top-section{
   background-color:#000;
   height:110vh;
@@ -86,9 +75,7 @@
   margin-right:2rem;
   margin-top: .1  rem;
 }
-.boxShadow{
-  box-shadow: 0 10px 20px var(--boxShadow), 0 6px 6px var(--boxShadow);
-}
+
 
 @media screen and (max-width: 1024px) {
   

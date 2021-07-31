@@ -1,0 +1,247 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:root{
+	--fieldBg:#fff;
+	--loginBodyBg:var(--fieldBg);
+	--fieldPlaceHolderBg:var(--fieldBg);
+	--fieldPlaceHolder:#a5a5a5;
+	--borderOnFocused:#7b5dfa;
+	--linkColor:#0000A0;
+	--inputBorder:#413DA3;
+}
+
+body{
+	background:var(--fieldBg)
+}
+.loginForm{
+	display:flex;
+	flex-direction: column;
+	background:var(--loginBodyBg);
+	width:100%;
+	
+}
+.loginForm-text{
+	margin-top:2rem;
+	font-size:1.75rem;
+	font-weight:normal;
+	text-align:center;
+	font-family: "Vazir", sans-serif;
+
+}
+
+
+.form-row {
+	display: flex;
+	position: relative;
+	width:80%;
+	margin:.3rem auto
+}
+
+form > .form-row > span {
+	background: var(--fieldPlaceHolderBg);
+	/* background: red; */
+	color: var(--fieldPlaceHolder);	
+	display: inline-block;
+	right: 1em;
+	padding: 0 .7rem 0 .5rem;
+	position: absolute;
+	pointer-events: none;
+	transform: translatey(-50%);
+	top: 50%;
+	transition: all 200ms ease;
+	user-select: none;
+	font-size: .9rem;
+	border-radius: .5rem;
+}
+.checkBox-row{
+	margin:auto;
+	width:80%;
+	vertical-align:middle
+}
+.checkBox{
+	vertical-align:middle;
+
+}
+.forgot{
+	font-size: .8rem;
+	text-decoration: none;
+	text-align: left;
+	color:var(--linkColor);
+}
+.forgot:hover{
+	color:var(--inputBorder)
+}
+.forgotRow{
+	flex-direction: row-reverse;
+}
+.remember{
+	font-size:1rem
+}
+.placeholderIcon{
+	width:1rem;
+	margin-left:.4rem ;
+	vertical-align:middle;
+}
+form > .form-row > input,
+form > .form-row > button {
+	border-radius: 1rem;
+	padding: 1em 1rem;
+	width: 100%;
+	margin:.3rem auto;
+	font-size:1rem
+	
+}
+
+form > .form-row > button {
+	width: 100%;
+	background: var(--btnBg);
+	border:none;
+	outline:none;
+	font-size: 1.4rem;
+	padding: .7rem 2rem;
+	color:var(--btnColor);
+	font-family: "Vazir", sans-serif;
+	cursor: pointer;
+}
+form > .form-row > button:hover, 
+form > .form-row > button:focus{
+	background: var(--btnBgHover);
+}
+.wantSignUp{
+	justify-content:center;
+	font-size: 1rem;
+	margin:2rem auto
+}
+
+.signUpLink{
+	margin:auto .5rem;
+	color:var(--linkColor);
+	text-decoration: none;
+}
+.signUpLink:hover{
+	color:var(--inputBorder)
+}
+form > .form-row > input {
+	transition: 50ms ease all;
+	width: 100%;
+	background: var(--fieldBg);
+}
+
+form > .form-row > input[type=text], form > .form-row > input[type=password] {
+	border: 1.7px solid var(--inputBorder);
+}
+
+form > .form-row > input:valid + span {
+	top: -.4rem;
+	font-size: .90rem;
+	right:.5rem;
+	transform: scale(.8);
+}
+
+form > .form-row > input:invalid + span {
+	top: 50%;
+
+}
+
+form > .form-row > input:focus + span {
+	top: -.4rem;
+	right:.5rem;
+	transform: scale(.8);
+	color:var(--borderOnFocused);
+}
+
+form > .form-row > input:required {
+	box-shadow: none;
+}
+
+form > .form-row > input:focus {
+	border-color: var(--borderOnFocused);
+	outline: none;
+	
+}
+
+form > .form-row > input:focus:invalid {
+	box-shadow: none;
+	top: 50%;
+}
+
+form > .form-row > input:focus:valid {
+	top: 0;
+}
+
+.error{
+	margin-top:.5rem;
+	color:#ff2441;
+	font-size: .8rem;
+}
+
+.loginBottomImg{
+	display: none;
+}
+.loginTopImg{
+	display: none;
+}
+
+@media screen and (min-width: 850px) {
+	body{
+		background:var(--bg);
+		height:100vh;
+		overflow:hidden;
+	}
+	.loginFormWrapperWrapperWrapper{
+		width:100%;
+		height:90%;
+		overflow:hidden;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		/* border-radius: 1rem 1rem 1rem 0; */
+		/* background:red */
+		background:var(--bg);
+
+	}
+
+	.loginFormWrapperWrapper{
+		width:70%;
+		height:80%;
+		background:#fff;
+		border-radius: 1rem 1rem 1rem 0;
+
+	}
+  .loginFormWrapper{
+		display: flex;
+		flex-direction: row-reverse;
+		width:100%;
+		height:100%;
+		background-image: url("../images/Login/loginImage.svg");
+		background-position:left ;
+		background-size: contain;
+		border-radius: 1rem 1rem 1rem 0;
+		background-repeat: no-repeat;
+		/* background:blue */
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11), 0 6px 6px rgba(0, 0, 0, 0.11);
+	}
+	.loginForm{
+		background: transparent;
+		border-radius: 1rem;
+		width:45%
+	}
+	.wantSignUp{
+		margin:1.5rem auto
+	}
+	.loginBottomImg{
+		display:block;
+		position: absolute;
+		bottom:-10rem;
+		right:-10rem;
+	}
+	.loginTopImg{
+		display:block;
+		position: absolute;
+		top:-4rem;
+		left:-6.5rem;
+	}
+}

@@ -95,7 +95,8 @@
   align-items: center;
 }
 .collapseBtn{
-  display:none
+  display:none;
+  background:var(--navBg)
 }
 @media screen and (max-width: 768px) {
   .topBar{
@@ -202,15 +203,18 @@
       top:4rem;
     }
     to{
+      color: var(--navBg);
       top:-20rem;
     }
   }
   @keyframes collapseAnimation{
     from{
       top:-20rem;
+      color: var(--navBg);
     }
     to{
       top:4rem;
+      color:var(--navColor);
     }
   }
   .logo{

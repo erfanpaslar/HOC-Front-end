@@ -1,6 +1,16 @@
 :root{
   font-family: "Vazir", sans-serif;
   --bg:#DFDEE7;
+  --titleColor:#fff;
+  --btnBg:#0087C2;
+  --btnBgHover:#28a5db;
+  --btnColor:#fff;
+  --boxShadow:rgba(17, 17, 17, 0.103);
+  --articleBg:#F7FBFF;
+  --articleLittleBg:#fff;
+  --articleBorder:#363377;
+  --articleColor:#41417C;
+  --qnaColor:#413DA3;
 }
 body{
   margin: 0;
@@ -14,3 +24,6 @@ body{
   height:200vh;
 }
 
+.boxShadow{
+  box-shadow: 0 10px 20px var(--boxShadow), 0 6px 6px var(--boxShadow);
+}

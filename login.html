@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/head.css">
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/scrollbar.css">
+
+</head>
+<body id="body">
+  <div class="custom_scroll"> 
+    <div class="scroll_block" id="scroll_block"></div>
+  </div>
+  <div class="topBar boxShadow"  dir="rtl">
+    <div class="anotherFlex">
+
+      <div class="topBar-ul">
+        <a class="topBar-item logoText"><span class="zang">زنگ</span><img class="clockImg" src="./images/icons/alarm-clock.svg" alt=""></img><br><span>برنامه نویسی</span></a>
+      </div>
+      <div class="collapse">
+        <button class="collapseBtn" onclick="collapseToggle()">
+          <span id="topLine" class="collapseLine">-</span>
+          <span class="collapseLine">-</span>
+          <span id="bottomLine" class="collapseLine">-</span>
+        </button>
+        <div id="collapseContent" class="collapseContent collapseHideFirst">
+          <a class="topBar-item topBar-item-hover">خانه</a>
+          <a class="topBar-item topBar-item-hover">ورود</a>
+          <a class="topBar-item topBar-item-hover">ثبت نام</a>
+          <a class="topBar-item topBar-item-hover">باشگاه HOC</a>
+        </div>
+      </div>
+    </div>
+      <img class="topBar-item logo" src="./images/mainPage/hocLogo.png"></img>
+  </div>
+  <script src="js/head.js"></script>
+  <div class="dummyTopBar" dir="rtl"></div>
+
+  <!-- ********************** -->
+  <div class="loginBottomImg"><img src="./images/Login/loginBottom.svg" alt=""></div>
+  <div class="loginTopImg"><img src="./images/Login/loginTop.svg" alt=""></div>
+  <div class="loginFormWrapperWrapperWrapper">
+    <div class="loginFormWrapperWrapper">
+      <div class="loginFormWrapper">
+        <div class="loginForm" dir="rtl">
+
+          <h1 class="loginForm-text" >ورود به حساب کاربری</h1>
+          <form method="post" action="">
+            <div class="form-row">
+              <!-- <input type="text" required> -->
+              <input type="text" name="username-<?=args['form_id']?>"  required>
+              <span><img class="placeholderIcon" src="../images/icons/user.svg" alt="">نام کاربری یا ایمیل</span>
+            </div>
+
+            <div class="form-row">
+              <!-- <input type="password" required> -->
+              <input type="password" name="uer_password-<?=args['form_id']?>" required>
+              <span><img class="placeholderIcon" src="../images/icons/padlock.svg" alt="">رمز عبور</span>
+            </div>
+
+            <div class="form-row forgotRow"><a class="forgot" href="#">رمز عبور خود را فراموش کردید؟</a></div>
+            
+            <div class="checkBox-row remember">
+              <input class="checkBox" type="checkbox" name="remember" value="1">
+              <label>مرا به خاطر بسپار</label>
+            </div>
+            
+            <div class="form-row">
+              <!-- <button type="submit">ورود</button> -->
+              <button type="submit" id="um-submit-btn" class="um-buttton">ورود</button>
+            </div>
+            <div class="form-row error">نام کاربری یا رمز عبور اشتباه است!</div>
+            <div class="form-row wantSignUp">هنوز ثبت نام نکردید؟ <a class="signUpLink" href="#">ثبت نام</a></div>
+          
+            <!-- 
+            <input type="hidden" name="form_id" value="<?=$args['form_id']?>">
+            <input type="hidden" name="um_request" value="" size="25">
+            <?php wp_nonce_field('um_login_form'); ?> 
+            -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="contact-wrapper">
+    <header class="login-cta">
+      <h2>Account Login</h2>
+    </header>
+    <form>
+      <div class="form-row">
+        <input type="text" required dir="rtl">
+        <span>Username or Email</span>
+      </div>
+      <div class="form-row">
+        <input type="password" required>
+        <span>Password</span>
+      </div>
+      <div class="form-row"></div>
+      <div class="form-row">
+        <button type="submit">Login to your Account!</button>
+      </div>
+    </form>
+    
+  </div> -->
+  <!-- <div class="temp"></div> -->
+
+  <script src="js/scrollbar.js"></script>
+</body>
+</html>

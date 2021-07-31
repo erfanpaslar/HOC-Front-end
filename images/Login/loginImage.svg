@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="665" height="742" viewBox="0 0 665 742">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_35" data-name="Rectangle 35" width="419" height="275" transform="translate(0.324)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#302d7b"/>
+      <stop offset="0" stop-color="#81ffc8"/>
+      <stop offset="1" stop-color="#06005c"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_37" data-name="Rectangle 37" width="468" height="404" transform="translate(0.324)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcdc00"/>
+      <stop offset="0" stop-color="#237300"/>
+      <stop offset="0" stop-color="#302d7b"/>
+      <stop offset="0" stop-color="#0a009e"/>
+      <stop offset="0" stop-color="#14009e"/>
+      <stop offset="1" stop-color="#00ffb3"/>
+      <stop offset="1" stop-color="#ffc300"/>
+    </linearGradient>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_38" data-name="Rectangle 38" width="174" height="268" transform="translate(0.324)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff9494"/>
+      <stop offset="0" stop-color="#7ffbc6"/>
+      <stop offset="1" stop-color="#12109e"/>
+    </linearGradient>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_42" data-name="Rectangle 42" width="148" height="285" transform="translate(0.324)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x1="0.93" y1="0.252" x2="0.072" y2="0.747" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#12109f"/>
+      <stop offset="0" stop-color="#12109e"/>
+      <stop offset="0" stop-color="#110f96"/>
+      <stop offset="1" stop-color="#7ffbc6"/>
+    </linearGradient>
+  </defs>
+  <g id="Left_shape" data-name="Left shape" transform="translate(-0.324)">
+    <g id="Mask_Group_5" data-name="Mask Group 5" transform="translate(100)" clip-path="url(#clip-path)">
+      <path id="Union_6" data-name="Union 6" d="M0,643.987V128.154H.434Q0,123.118,0,117.966a117.966,117.966,0,1,1,235.931,0q0,5.148-.434,10.188h.434V643.987Z" transform="translate(440.613 159.346) rotate(140)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(197 338)" clip-path="url(#clip-path-2)">
+      <path id="Union_4" data-name="Union 4" d="M0,643.987V128.154H.434Q0,123.118,0,117.966a117.966,117.966,0,1,1,235.931,0q0,5.148-.434,10.188h.434V643.987Z" transform="matrix(0.799, -0.602, 0.602, 0.799, -34.397, 126.987)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <g id="Mask_Group_8" data-name="Mask Group 8" transform="translate(0 474)" clip-path="url(#clip-path-3)">
+      <path id="Union_5" data-name="Union 5" d="M0,643.987V128.154H.434Q0,123.118,0,117.966a117.966,117.966,0,1,1,235.931,0q0,5.148-.434,10.188h.434V643.987Z" transform="translate(307.415 420.983) rotate(140)" fill="url(#linear-gradient-3)"/>
+    </g>
+    <g id="Mask_Group_9" data-name="Mask Group 9" transform="translate(0 110)" clip-path="url(#clip-path-4)">
+      <path id="Path_46" data-name="Path 46" d="M134.257,0A134.257,134.257,0,1,1,0,134.257,134.257,134.257,0,0,1,134.257,0Z" transform="translate(-49.142 -36.899) rotate(30)" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>
