@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="">
+      
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>زنگ برنامه نويسي</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/head.css">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/scrollbar.css">
+
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v28.0.0/dist/font-face.css" rel="stylesheet" type="text/css">
+  <!-- SLIDER -->
+  <link rel="stylesheet" type="text/css" href="styles/slideReset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="styles/slide.css">
+
+  
+  <link rel="stylesheet" href="styles/countdown.css">
+
+  
+
+
+</head>
+<body id="body">
+  
+  <div class="custom_scroll"> 
+    <div class="scroll_block" id="scroll_block"></div>
+  </div>
+  <div class="topBar boxShadow"  dir="rtl">
+    <div class="anotherFlex">
+
+      <div class="topBar-ul">
+        <a class="topBar-item logoText"><span class="zang">زنگ</span><img class="clockImg" src="./images/icons/alarm-clock.svg" alt=""></img><br><span>برنامه نویسی</span></a>
+      </div>
+      <div class="collapse">
+        <button class="collapseBtn" onclick="collapseToggle()">
+          <span id="topLine" class="collapseLine">-</span>
+          <span class="collapseLine">-</span>
+          <span id="bottomLine" class="collapseLine">-</span>
+        </button>
+        <div id="collapseContent" class="collapseContent collapseHideFirst">
+          <a class="topBar-item topBar-item-hover">خانه</a>
+          <a class="topBar-item topBar-item-hover">ورود</a>
+          <a class="topBar-item topBar-item-hover">ثبت نام</a>
+          <a class="topBar-item topBar-item-hover">باشگاه HOC</a>
+        </div>
+      </div>
+    </div>
+      <img class="topBar-item logo" src="./images/mainPage/hocLogo.png"></img>
+  </div>
+  <script src="js/head.js"></script>
+
+  <div class="dummyTopBar" dir="rtl"></div>
+  <div class="top-section" dir="rtl">
+    <div class="top-section-text">
+      <p class="top-section-title">یازدهمین همایش زنگ برنامه نویسی</p>
+      <div class="top-text-container">
+        <span class="bracket bracket-right">{</span>
+        <p class="top-section-p">
+          لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم 
+          <span class="bracket bracket-left">}</span>
+        </p>
+      </div>
+      <p class="top-section-date">تاریخ همایش: 11 شهریور ماه</p>
+      
+      <main class="main-content" dir="ltr">
+        
+        <div class="container-countdown">
+          <button class="buttons nowSignupBtn">همین حالا ثبت نام کنید</button>
+          <div class="mainCountdown">
+            <section class="countdown-block">
+              <span class="days time-element">
+                <span class="top">00</span>
+                <span class="top-back">
+                  <span>00</span>
+                </span>
+                <span class="bottom">00</span>
+                <span class="bottom-back">
+                  <span>00</span>
+                </span>
+              </span>
+              <h2 class="subtitle">روز</h2>
+            </section>
+            <section class="countdown-block">
+              <span class="hours time-element">
+                <span class="top">00</span>
+                <span class="top-back">
+                  <span>00</span>
+                </span>
+                <span class="bottom">00</span>
+                <span class="bottom-back">
+                  <span>00</span>
+                </span>
+              </span>
+              <h2 class="subtitle">ساعت</h2>
+            </section>
+            <section class="countdown-block">
+              <span class="minutes time-element">
+                <span class="top">00</span>
+                <span class="top-back">
+                  <span>00</span>
+                </span>
+                <span class="bottom">00</span>
+                <span class="bottom-back">
+                  <span>00</span>
+                </span>
+              </span>
+              <h2 class="subtitle">دقیقه</h2>
+            </section>
+            <section class="countdown-block">
+              <span class="seconds time-element">
+                <span class="top">00</span>
+                <span class="top-back">
+                  <span>00</span>
+                </span>
+                <span class="bottom">00</span>
+                <span class="bottom-back">
+                  <span>00</span>
+                </span>
+              </span>
+              <h2 class="subtitle">ثانیه</h2>
+            </section>
+          </div>
+        </div>
+        
+      </main>
+      
+    </div>
+  </div>
+  <script src="./js/countdown.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+  <div class="middle-section"  dir="rtl">
+    <article class="article boxShadow">
+      <div class="article-text">
+        <h3 class="article-title">زنگ برنامه نویسی چیست ؟</h3>
+        <img class="article-image2" src="./images/mainPage/hocImage.png" alt="">
+        <p class="article-p">
+          همون‌طور که از اسمش معلومه، زنگ برنامه‌نویسی، مقدمه‌ای یه ساعته برای درس علوم کامپیوتر هست. چیزی که زنگ برنامه‌نویسی روش تاکید داره، اهمیت علوم کامپیوتر توی قرن ۲۱ هست و هم‌چنین می‌خواد این رو نشون بده که نه تنها برنامه‌نویسی چیزی نیست که ازش بترسی، بلکه یه مهارتی هست که حتی به راحتی می‌تونه به شکل عادت (یا غریزه) دربیاد. امروزه، زنگ برنامه‌نویسی از یه برنامه‌ی یه ساعته بزرگ‌تر شده و حتی در بعضی از رویدادهای جهانی، زمان برگزاری یه هفته هم طول کشیده. خیلی از شرکت‌های بزرگ، مثل مایکروسافت ، اپل ، آمازون و... هم در پشت صحنه‌‌ی این رویداد هستن.
+        </p>
+      </div>
+      <img class="article-image" src="./images/mainPage/hocImage.png" alt="">
+    </article>
+
+    <article class="article boxShadow">
+      <div class="article-text">
+        <h3 class="article-title">چرا برنامه نویسی یاد بگیریم ؟</h3>
+        <img class="article-image2" src="./images/mainPage/target.png" alt="">
+        <p class="article-p">
+          مهارت حل مسئله، قلب برنامه نویسیه و ما با برنامه نویسی یاد میگیریم که مشکلاتمون رو به قطعه های کوچک تر تقسیم کنیم و به دنبال کار آمد ترین منطق و الگوریتم برای حلشون باشیم. برنامه نویسی ما رو مجبور میکنه تا به طور عمیق درباره مشکل فکر کنیم و افکارمون رو سازماندهی کنیم تا بتونیم از پس هر چالش جدیدی که مقابلمون قرار میگیره بر بیایم و در قرن پیشرفت فناوری به فردی ریسک پذیر تبدیل بشیم.<br>
+بنابراین یادگیری و نوشتن کد، یک تمرین عالی برای ذهنمون خواهد بود و باعث بهبود عملکرد اون می‌شه. ما یاد میگیریم دنیا و مشکلاتش را درک کنیم و با رویکرد منطقی و خلاقانه آنها را حل کنیم و این بهترین کاری است که می‌توانیم برای تغییر دنیا انجام دهیم!
+        </p>
+      </div>
+      <img class="article-image" src="./images/mainPage/target.png" alt="">
+    </article>
+    
+    <article class="article boxShadow">
+      <div class="article-text">
+        <h3 class="article-title">زنگ برنامه‌نویسی چیه؟</h3>
+        <img class="article-image2" src="./images/hosLogo.png" alt="">
+        <p class="article-p">
+          حالا که با هدف و محتوای زنگ برنامه نویسی آشنا شدیم خوبه بدونیم که امسال هم مثل هر سال، دانشگاه شیراز میزبانی این رویداد رو برعهده داره اما به دلیل شیوع ویروس کرونا، این همایش بصورت مجازی برگزار خواهد شد. ما دانشجو های بخش کامپیوتر داریم سخت تلاش می‌کنیم تا بتونیم این همایش رو به بهترین شکل و کیفیت ممکن برگزار کنیم و صمیمانه منتظر حضور گرم تک تک شما هستیم.<br>
+          برنامه های جذاب و متنوعی داریم که در طول همایش برگزار میشن و اجازه نمیدن شما حوصلتون سر بره 🙂<br>
+          هم چنین قراره جوایز ارزشمندی هم به نفرات برتر بدیم و البته از تمامی شرکت کنندگان هم قدردانی کنیم<br>
+          امید داریم که ما را در این همایش همراهی کنین و بتوانیم تجربه ای جدید و متفاوت برایتان رقم بزنیم
+        </p>
+      </div>
+      <img class="article-image" src="./images/hosLogo.png" alt="">
+    </article>
+
+  </div>
+  <ul class="slider" dir="ltr">
+    <li><img src="images/mainPage/hoc1.jpg" alt=""></li>
+    <li><img src="images/mainPage/hoc3.jpg" alt=""></li>
+    <li><img src="images/mainPage/hoc4.jpg" alt=""></li>
+    <li><img src="images/mainPage/hoc5.jpg" alt=""></li>
+    <li><img src="images/mainPage/hoc6.jpg" alt=""></li>
+  </ul>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/slide.js"></script>
+
+  <div class="middle-section colorfulBg" dir="rtl">
+    <div class="glass grid grid--1x3">
+      <article class="littleCard">
+        <div class="littleCard-img-wrapper">
+          <img class="littleCard-img" src="./images/mainPage/first.jpg" alt="" srcset="">
+        </div>
+        <p class="littleCard-p">دانش آموزان در حال یادگیری در بیش از 45 زبان مختلف هستند</p>
+      </article>
+      <article class="littleCard">
+        <div class="littleCard-img-wrapper">
+          <img class="littleCard-img" src="./images/mainPage/second.jpg" alt="" srcset="">
+        </div>
+        <p class="littleCard-p">بیش از 100 میلیون دانش آموز HOC را امتحان کرده اند.</p>
+      </article>
+      <article class="littleCard">
+        <div class="littleCard-img-wrapper">
+          <img class="littleCard-img" src="./images/mainPage/third.jpg" alt="" srcset="">
+        </div>
+        <p class="littleCard-p">تعداد دخترانی که علم کامپیوتر را تجربه کردند بیش از تعداد آن ها در 70 سال گذشته است</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="middle-section" dir="rtl">
+    <article class="article bigArticle boxShadow">
+      <div class="article-bigTitle-container">
+        <img class="questionMark questionMarkLeft" src="images/icons/question.svg" alt="">
+        <h3 class="article-title bigTitle">سوالات متداول </h3>
+        <img class="questionMark questionMarkRight" src="images/icons/question.svg" alt="">
+      </div>
+      <div class="bigArticleText">
+        <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
+        <p class="article-p titanic">
+          خالد حسینی تو رمان باد بادک باز مینویسه : ﻣﺮﺩ ﺁﻫﺴﺘﻪ ﺩﺭ ﮔﻮﺵ ﻓﺮﺯﻧﺪ ﺗﺎﺯﻩ ﺑﻪ ﺑﻠﻮﻍ ﺭﺳﯿﺪﻩ ﺍﺵ ﺑﺮﺍﯼ ﭘﻨﺪ ﭼﻨﯿﻦ ﻧﺠﻮﺍ ﮐﺮﺩ : ” ﭘﺴﺮﻡ ﺩﺭ ﺯﻧﺪﮔﯽ ﻫﺮﮔﺰ ﺩﺯﺩﯼ ﻧﮑﻦ ” ﭘﺴﺮ ﻣﺘﻌﺠﺐ ﻭ ﻣﺒﻬﻮﺕ ﺑﻪ ﭘﺪﺭ ﻧﮕﺎﻩ ﮐﺮﺩ ﺑﺪﯾﻦ ﻣﻌﻨﺎ ﮐﻪ ﺍﻭ ﻫﺮﮔﺰ ﺩﺳﺖ ﮐﺞ ﻧﺪﺍﺷﺘﻪ ﭘﺪﺭ ﺑﻪ ﻧﮕﺎﻩ ﻣﺘﻌﺠﺐ ﻓﺮﺯﻧﺪ ﻟﺒﺨﻨﺪﯼ ﺯﺩ ﻭ ﺍﺩﺍﻣﻪ ﺩﺍﺩ </p>
+      </div>
+        
+      <div class="bigArticleText">
+        <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
+        <p class="article-p titanic">ﺩﺭ ﺯﻧﺪﮔﯽ ﺩﺭﻭﻍ ﻧﮕﻮ ﭼﺮﺍ ﮐﻪ ﺍﮔﺮ ﮔﻔﺘﯽ ﺻﺪﺍﻗﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﯿﺎﻧﺖ ﻧﮑﻦ ﮐﻪ ﺍﮔﺮ ﮐﺮﺩﯼ ﻋﺸﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﺸﻮﻧﺖ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﻣﺤﺒﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﻧﺎ ﺣﻖ ﻧﮕﻮ ﺍﮔﺮ ﮔﻔﺘﯽ ﺣﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺑﯽ ﺣﯿﺎﯾﯽ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﺷﺮﺍﻓﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍی... ﭘﺲ ﺩﺭ ﺯﻧﺪﮔﯽ ﻓﻘﻂ ﺩﺯﺩﯼ نکن !</p>
+      </div>
+      <div class="bigArticleText">
+        <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
+        <p class="article-p titanic">
+          خالد حسینی تو رمان باد بادک باز مینویسه : ﻣﺮﺩ ﺁﻫﺴﺘﻪ ﺩﺭ ﮔﻮﺵ ﻓﺮﺯﻧﺪ ﺗﺎﺯﻩ ﺑﻪ ﺑﻠﻮﻍ ﺭﺳﯿﺪﻩ ﺍﺵ ﺑﺮﺍﯼ ﭘﻨﺪ ﭼﻨﯿﻦ ﻧﺠﻮﺍ ﮐﺮﺩ : ” ﭘﺴﺮﻡ ﺩﺭ ﺯﻧﺪﮔﯽ ﻫﺮﮔﺰ ﺩﺯﺩﯼ ﻧﮑﻦ ” ﭘﺴﺮ ﻣﺘﻌﺠﺐ ﻭ ﻣﺒﻬﻮﺕ ﺑﻪ ﭘﺪﺭ ﻧﮕﺎﻩ ﮐﺮﺩ ﺑﺪﯾﻦ ﻣﻌﻨﺎ ﮐﻪ ﺍﻭ ﻫﺮﮔﺰ ﺩﺳﺖ ﮐﺞ ﻧﺪﺍﺷﺘﻪ ﭘﺪﺭ ﺑﻪ ﻧﮕﺎﻩ ﻣﺘﻌﺠﺐ ﻓﺮﺯﻧﺪ ﻟﺒﺨﻨﺪﯼ ﺯﺩ ﻭ ﺍﺩﺍﻣﻪ ﺩﺍﺩ </p>
+      </div>
+        
+      <div class="bigArticleText">
+        <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
+        <p class="article-p titanic">ﺩﺭ ﺯﻧﺪﮔﯽ ﺩﺭﻭﻍ ﻧﮕﻮ ﭼﺮﺍ ﮐﻪ ﺍﮔﺮ ﮔﻔﺘﯽ ﺻﺪﺍﻗﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﯿﺎﻧﺖ ﻧﮑﻦ ﮐﻪ ﺍﮔﺮ ﮐﺮﺩﯼ ﻋﺸﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﺸﻮﻧﺖ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﻣﺤﺒﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﻧﺎ ﺣﻖ ﻧﮕﻮ ﺍﮔﺮ ﮔﻔﺘﯽ ﺣﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺑﯽ ﺣﯿﺎﯾﯽ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﺷﺮﺍﻓﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍی... ﭘﺲ ﺩﺭ ﺯﻧﺪﮔﯽ ﻓﻘﻂ ﺩﺯﺩﯼ نکن !</p>
+      </div>
+      <div class="bigArticleText">
+        <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
+        <p class="article-p titanic">
+          خالد حسینی تو رمان باد بادک باز مینویسه : ﻣﺮﺩ ﺁﻫﺴﺘﻪ ﺩﺭ ﮔﻮﺵ ﻓﺮﺯﻧﺪ ﺗﺎﺯﻩ ﺑﻪ ﺑﻠﻮﻍ ﺭﺳﯿﺪﻩ ﺍﺵ ﺑﺮﺍﯼ ﭘﻨﺪ ﭼﻨﯿﻦ ﻧﺠﻮﺍ ﮐﺮﺩ : ” ﭘﺴﺮﻡ ﺩﺭ ﺯﻧﺪﮔﯽ ﻫﺮﮔﺰ ﺩﺯﺩﯼ ﻧﮑﻦ ” ﭘﺴﺮ ﻣﺘﻌﺠﺐ ﻭ ﻣﺒﻬﻮﺕ ﺑﻪ ﭘﺪﺭ ﻧﮕﺎﻩ ﮐﺮﺩ ﺑﺪﯾﻦ ﻣﻌﻨﺎ ﮐﻪ ﺍﻭ ﻫﺮﮔﺰ ﺩﺳﺖ ﮐﺞ ﻧﺪﺍﺷﺘﻪ ﭘﺪﺭ ﺑﻪ ﻧﮕﺎﻩ ﻣﺘﻌﺠﺐ ﻓﺮﺯﻧﺪ ﻟﺒﺨﻨﺪﯼ ﺯﺩ ﻭ ﺍﺩﺍﻣﻪ ﺩﺍﺩ </p>
+      </div>
+        
+      <div class="bigArticleText">
+        <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
+        <p class="article-p titanic">ﺩﺭ ﺯﻧﺪﮔﯽ ﺩﺭﻭﻍ ﻧﮕﻮ ﭼﺮﺍ ﮐﻪ ﺍﮔﺮ ﮔﻔﺘﯽ ﺻﺪﺍﻗﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﯿﺎﻧﺖ ﻧﮑﻦ ﮐﻪ ﺍﮔﺮ ﮐﺮﺩﯼ ﻋﺸﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﺸﻮﻧﺖ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﻣﺤﺒﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﻧﺎ ﺣﻖ ﻧﮕﻮ ﺍﮔﺮ ﮔﻔﺘﯽ ﺣﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺑﯽ ﺣﯿﺎﯾﯽ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﺷﺮﺍﻓﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍی... ﭘﺲ ﺩﺭ ﺯﻧﺪﮔﯽ ﻓﻘﻂ ﺩﺯﺩﯼ نکن !</p>
+      </div>
+      <div class="bigArticleText">
+        <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
+        <p class="article-p titanic">
+          خالد حسینی تو رمان باد بادک باز مینویسه : ﻣﺮﺩ ﺁﻫﺴﺘﻪ ﺩﺭ ﮔﻮﺵ ﻓﺮﺯﻧﺪ ﺗﺎﺯﻩ ﺑﻪ ﺑﻠﻮﻍ ﺭﺳﯿﺪﻩ ﺍﺵ ﺑﺮﺍﯼ ﭘﻨﺪ ﭼﻨﯿﻦ ﻧﺠﻮﺍ ﮐﺮﺩ : ” ﭘﺴﺮﻡ ﺩﺭ ﺯﻧﺪﮔﯽ ﻫﺮﮔﺰ ﺩﺯﺩﯼ ﻧﮑﻦ ” ﭘﺴﺮ ﻣﺘﻌﺠﺐ ﻭ ﻣﺒﻬﻮﺕ ﺑﻪ ﭘﺪﺭ ﻧﮕﺎﻩ ﮐﺮﺩ ﺑﺪﯾﻦ ﻣﻌﻨﺎ ﮐﻪ ﺍﻭ ﻫﺮﮔﺰ ﺩﺳﺖ ﮐﺞ ﻧﺪﺍﺷﺘﻪ ﭘﺪﺭ ﺑﻪ ﻧﮕﺎﻩ ﻣﺘﻌﺠﺐ ﻓﺮﺯﻧﺪ ﻟﺒﺨﻨﺪﯼ ﺯﺩ ﻭ ﺍﺩﺍﻣﻪ ﺩﺍﺩ </p>
+      </div>
+        
+      <div class="bigArticleText">
+        <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
+        <p class="article-p titanic">ﺩﺭ ﺯﻧﺪﮔﯽ ﺩﺭﻭﻍ ﻧﮕﻮ ﭼﺮﺍ ﮐﻪ ﺍﮔﺮ ﮔﻔﺘﯽ ﺻﺪﺍﻗﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﯿﺎﻧﺖ ﻧﮑﻦ ﮐﻪ ﺍﮔﺮ ﮐﺮﺩﯼ ﻋﺸﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﺸﻮﻧﺖ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﻣﺤﺒﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﻧﺎ ﺣﻖ ﻧﮕﻮ ﺍﮔﺮ ﮔﻔﺘﯽ ﺣﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺑﯽ ﺣﯿﺎﯾﯽ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﺷﺮﺍﻓﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍی... ﭘﺲ ﺩﺭ ﺯﻧﺪﮔﯽ ﻓﻘﻂ ﺩﺯﺩﯼ نکن !</p>
+      </div>
+    </article>
+  </div>
+
+  </div>
+  <div class="footer">
+    <div class="theUpperContainer">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d5832.63025645966!2d52.51988106137905!3d29.629760291403244!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3fb213bc74dceebd%3A0xae84b25e83670a13!2z2K_Yp9mG2LTaqdiv2Ycg24wg2YXZh9mG2K_Ys9uMINuy2Iwg2K_Yp9mG2LTar9in2Ycg2LTbjNix2KfYsiwgRmFycyBQcm92aW5jZSwgU2hpcmF6LCBNb2xsYSBTYWRyYSBTdCwgSXJhbg!3m2!1d29.6285062!2d52.5185883!5e0!3m2!1sen!2s!4v1627674435390!5m2!1sen!2s" width="270" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="textAndLogoContainer">
+        <div class="footer-contact-box">
+            <div class="footer-text-container" dir="rtl">
+              <p class="footer-p1">مهندسی کامپیوتر دانشگاه شیراز</p>
+              <p class="footer-p2">دانشجویان و اعضای فعال<br>انجمن ACM دانشگاه شیراز</p>
+            </div>
+            <div class="footer-logos">
+              <img class="footerImage acmImg" src="./images/mainPage/shirazuLogo.png" alt="">
+              <img class="footerImage acmImg" src="./images/mainPage/acm.png" alt="">
+            </div>
+        </div>
+        <!-- ! ADD LINKS and some animation -->
+        <div class="footer-contact-logos">
+          <a href="#"><img class="contact-logo telegramLogo" src="images/icons/telegram.svg" alt=""></a>
+          <a href="#"><img class="contact-logo instagramLogo" src="images/icons/instagram.svg" alt=""></a>
+          <a href="#"><img class="contact-logo twitterLogo" src="images/icons/twitter.svg" alt=""></a>
+          <a href="#"><img class="contact-logo linkedinLogo" src="images/icons/linkedin.svg" alt=""></a>
+        </div>
+        
+      </div>
+  </div>
+  <div class="bottom-contact">
+    <p class="poshtibani">پشتیبانی</p>
+    <p class="bottom-contact-p"><img class="contact-logo phoneLogo" src="images/icons/phone-call.svg" alt="">09365723124</p>
+    <p class="bottom-contact-p"><img class="contact-logo" src="images/icons/email.svg" alt="">support@hocshiraz.ir</p>
+  </div>
+</div>
+
+<script src="js/scrollbar.js"></script>
+
+<!-- <script>customScroll();</script> -->
+
+  <!-- <div class="temp"></div> -->
+</body>
+</html>

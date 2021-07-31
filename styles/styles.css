@@ -1,0 +1,16 @@
+:root{
+  font-family: "Vazir", sans-serif;
+  --bg:#DFDEE7;
+}
+body{
+  margin: 0;
+  background:var(--bg);
+  font-size: 62.5%;
+  font-family: "Vazir", sans-serif;
+
+}
+
+.temp{
+  height:200vh;
+}
+

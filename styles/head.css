@@ -1,0 +1,227 @@
+:root{
+  --navBg:#004f84;
+  --navHover:#0076A8;
+  --navColor:#ffffff;
+
+  /* font sizes */
+  
+}
+.dummyTopBar{
+  height:4rem;
+  
+}
+.topBar{
+  z-index:100000;
+  width:100%;
+  position: fixed;
+  display:flex;
+  height:4rem;
+  background:var(--navBg);
+  justify-content:space-between;
+  align-items:center;
+  /* overflow:hidden; */
+}
+.topBar-ul{
+  display: flex;
+  height:4rem;
+  background:var(--navBg);
+  align-items:center;
+  justify-content:center;
+  overflow: hidden;
+}
+.topBar-item{
+  list-style: none;
+  padding:.6rem 1rem;
+  margin: auto .5rem;
+  text-align: center;
+  font-size: 1rem;
+  vertical-align: middle;
+  text-decoration: none;
+  /* background-color:red */
+  color:var(--navColor);
+  cursor: pointer;
+  transition: background .5s;
+  border-radius: .5rem;
+
+
+}
+.topBar-item-hover:hover{
+  background: var(--navHover);
+  transition: background .5s;
+  border-radius: .6rem;
+}
+.logoText,
+.logo{
+  text-align:center;
+  vertical-align:middle;
+  float:right
+}
+.logo{
+  width:5rem;
+  padding:.1rem .7rem;
+  margin-left:1.5rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+.logoText{
+  margin-right:1.25rem;
+  margin-left:1.1rem;
+  line-height: 1.2rem;
+  font-size:1.3rem;
+  text-align: right;
+  padding-top:.5rem ;
+}
+.zang{
+  font-size:1.5rem;
+
+}
+.clockImg{
+  /* background-image: url("../images/Icons/alarm-clock.svg"); */
+  width:1.7rem;
+  margin:auto .4rem;
+  vertical-align:middle;
+  
+}
+.anotherFlex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.collapse ,
+.collapseContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collapseBtn{
+  display:none
+}
+@media screen and (max-width: 768px) {
+  .topBar{
+    display: block;
+  }
+  .anotherFlex{
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: flex-start;
+  }
+  .collapseBtn{
+    display: block;
+    border:none;
+    outline:none;
+    text-align: center;
+    padding:.5rem .75rem ;
+    min-height: 3rem;
+    min-width: 4rem;
+    margin-right: 1rem;
+    margin-top: .5rem;
+    border-radius: .6rem;
+  }
+  .collapseLine{
+    color:transparent;
+    user-select: none;
+    display: block;
+    border-bottom: solid 2px #fff;
+    border-top: solid 2px #fff;
+    margin:5px;
+    border-radius: 2px;
+    width:30px;
+    line-height: 0px;
+  }
+  .fadeLineIn{
+    animation-name: fadeLineTopIn;
+    animation-duration:.5s;
+  }
+  @keyframes fadeLineTopIn{
+    from{
+      border-bottom: solid 2px #fff0;
+    border-top: solid 2px #fff0;
+    }
+    to{
+      border-bottom: solid 2px #fff;
+    border-top: solid 2px #fff;
+    }
+  }
+  .fadeLine{
+    border-bottom: solid 2px #fff0;
+    border-top: solid 2px #fff0;
+    animation-name: fadeLineTop;
+    animation-duration:.5s;
+    /* display:none; */
+  }
+  @keyframes fadeLineTop{
+    from{
+      border-bottom: solid 2px #fff;
+    border-top: solid 2px #fff;
+    }
+    to{
+      border-bottom: solid 2px #fff0;
+    border-top: solid 2px #fff0;
+    }
+  }
+
+  .collapseBtn:hover{
+    background:var(--navHover);
+  }
+  .menuIcon{
+    max-width:1.5rem;
+    margin-top:3px
+  }
+  .collapseContent{
+    background: var(--navBg);
+    display:block;
+    position: fixed;
+    z-index: -10!important;
+    left:0;
+    top:4rem;
+    width:100%;
+    padding:0rem;
+    /* border-radius:0 0 .5rem .5rem; */
+  }
+  .collapseHideFirst{
+    top:-20rem;
+  }
+  /*  */
+
+  
+  /*  */
+
+  .collapseHide{
+    top:-20rem;
+    animation-name: collapseHideAnimation;
+    animation-duration: 1s;
+  }
+  .collapseShow{
+    top:4rem;
+    animation-name: collapseAnimation;
+    animation-duration: 1s;
+  }
+  @keyframes collapseHideAnimation{
+    from{
+      top:4rem;
+    }
+    to{
+      top:-20rem;
+    }
+  }
+  @keyframes collapseAnimation{
+    from{
+      top:-20rem;
+    }
+    to{
+      top:4rem;
+    }
+  }
+  .logo{
+    display:none
+  }
+  .topBar-item-hover{
+    margin:.5rem;
+    display: block;
+    /* display:none */
+  }
+  .logoText{
+    margin-left:0rem;
+  }
+}
