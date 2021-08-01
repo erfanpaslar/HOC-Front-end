@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="355.329" height="1165" viewBox="0 0 355.329 1165">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_57" data-name="Rectangle 57" width="96" height="166" transform="translate(1514 385)" fill="#302d7b" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_58" data-name="Rectangle 58" width="102" height="119" fill="#302d7b" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_59" data-name="Rectangle 59" width="186" height="124" fill="#302d7b" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_60" data-name="Rectangle 60" width="86" height="222" transform="translate(0.498)" fill="#302d7b" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Right_Shape" data-name="Right Shape" transform="translate(-1255.502 -223)">
+    <path id="Rectangle_54" data-name="Rectangle 54" d="M0,0H334a20,20,0,0,1,20,20V1145a20,20,0,0,1-20,20H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1256 223)" fill="#00428b"/>
+    <rect id="Rectangle_55" data-name="Rectangle 55" width="33" height="26" transform="matrix(0.695, 0.719, -0.719, 0.695, 1473.703, 800.224)" fill="#302d7b"/>
+    <g id="Mask_Group_14" data-name="Mask Group 14" transform="translate(0 98)" clip-path="url(#clip-path)">
+      <path id="Polygon_3" data-name="Polygon 3" d="M71,0l71,123H0Z" transform="translate(1501.918 428.524) rotate(-25)" fill="#302d7b"/>
+    </g>
+    <g id="Mask_Group_15" data-name="Mask Group 15" transform="translate(1508 1269)" clip-path="url(#clip-path-2)">
+      <path id="Path_45" data-name="Path 45" d="M5964.869,806.559s-8.342-58.03,42.9-56.837,51.246-56.7,51.246-56.7l44.1,31.632,15.493,95.494-116.793,22.083Z" transform="translate(-5957.053 -687.559)" fill="#302d7b"/>
+    </g>
+    <g id="Mask_Group_16" data-name="Mask Group 16" transform="translate(1269 1264)" clip-path="url(#clip-path-3)">
+      <circle id="Ellipse_23" data-name="Ellipse 23" cx="80" cy="80" r="80" transform="translate(0 20)" fill="#302d7b"/>
+    </g>
+    <g id="Mask_Group_17" data-name="Mask Group 17" transform="translate(1255.502 224)" clip-path="url(#clip-path-4)">
+      <path id="Union_8" data-name="Union 8" d="M18,238V89.886a51,51,0,1,1,66,0V238Z" transform="matrix(-0.982, 0.191, -0.191, -0.982, 93, 195.082)" fill="#302d7b"/>
+    </g>
+    <path id="Union_9" data-name="Union 9" d="M-4377.28,30.868l64.962,49.007,52.876-70.247,61.715,145.606-94.563-11.611-104.18,44.222Z" transform="translate(5537.125 -371.797) rotate(-13)" fill="#302d7b"/>
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M-4376.5,147a73.037,73.037,0,0,1-28.609-5.776,73.252,73.252,0,0,1-23.363-15.752,73.256,73.256,0,0,1-15.752-23.363A73.043,73.043,0,0,1-4450,73.5a73.045,73.045,0,0,1,5.776-28.61,73.255,73.255,0,0,1,15.752-23.363,73.251,73.251,0,0,1,23.363-15.752A73.039,73.039,0,0,1-4376.5,0a73.764,73.764,0,0,1,18.349,2.309A73.116,73.116,0,0,1-4341.5,8.852,73.5,73.5,0,0,0-4380,73.5a73.5,73.5,0,0,0,38.5,64.647,73.121,73.121,0,0,1-16.651,6.543A73.761,73.761,0,0,1-4376.5,147Z" transform="matrix(0.809, -0.588, 0.588, 0.809, 4880.943, -1672.72)" fill="#302d7b"/>
+    <path id="Union_10" data-name="Union 10" d="M-4395.5,119.481h-37.921V94.855L-4450,84.089l16.579-25.528V19.217h25.55L-4395.393,0l29.591,19.217h32.644v21.2l21.854,14.192-21.854,33.652v31.221h-20.275l-12.479,19.216Z" transform="translate(5905 1087.151)" fill="#302d7b"/>
+    <text id="C" transform="translate(1384.729 570.858) rotate(21)" fill="#0087c2" font-size="139" font-family="SegoeUI, Segoe UI"><tspan x="-86.061" y="0">C</tspan></text>
+    <text id="O" transform="translate(1603.555 769.951) rotate(-12)" fill="#0087c2" font-size="139" font-family="SegoeUI, Segoe UI"><tspan x="-104.793" y="0">O</tspan></text>
+    <text id="D" transform="translate(1553.972 1025.294) rotate(14)" fill="#0087c2" font-size="139" font-family="SegoeUI, Segoe UI"><tspan x="-97.463" y="0">D</tspan></text>
+    <text id="E" transform="translate(1422.597 1205.149) rotate(-19)" fill="#0087c2" font-size="139" font-family="SegoeUI, Segoe UI"><tspan x="-70.314" y="0">E</tspan></text>
+  </g>
+</svg>

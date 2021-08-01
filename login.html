@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ورود</title>
+  <link rel="stylesheet" href="styles/scrollbar.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/head.css">
   <link rel="stylesheet" href="styles/login.css">
-  <link rel="stylesheet" href="styles/scrollbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
 
 </head>
 <body id="body">
@@ -53,14 +54,14 @@
           <form method="post" action="">
             <div class="form-row">
               <!-- <input type="text" required> -->
-              <input type="text" name="username-<?=args['form_id']?>"  required>
-              <span><img class="placeholderIcon" src="../images/icons/user.svg" alt="">نام کاربری یا ایمیل</span>
+              <input type="text" name="username-<?=$args['form_id']?>"  required>
+              <span><img class="placeholderIcon" src="./images/icons/user.svg" alt="">نام کاربری یا ایمیل</span>
             </div>
 
             <div class="form-row">
               <!-- <input type="password" required> -->
-              <input type="password" name="uer_password-<?=args['form_id']?>" required>
-              <span><img class="placeholderIcon" src="../images/icons/padlock.svg" alt="">رمز عبور</span>
+              <input type="password" name="uer_password-<?=$args['form_id']?>" required>
+              <span><img class="placeholderIcon" src="./images/icons/padlock.svg" alt="">رمز عبور</span>
             </div>
 
             <div class="form-row forgotRow"><a class="forgot" href="#">رمز عبور خود را فراموش کردید؟</a></div>
@@ -85,6 +86,39 @@
           </form>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="theUpperContainer">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d5832.63025645966!2d52.51988106137905!3d29.629760291403244!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3fb213bc74dceebd%3A0xae84b25e83670a13!2z2K_Yp9mG2LTaqdiv2Ycg24wg2YXZh9mG2K_Ys9uMINuy2Iwg2K_Yp9mG2LTar9in2Ycg2LTbjNix2KfYsiwgRmFycyBQcm92aW5jZSwgU2hpcmF6LCBNb2xsYSBTYWRyYSBTdCwgSXJhbg!3m2!1d29.6285062!2d52.5185883!5e0!3m2!1sen!2s!4v1627674435390!5m2!1sen!2s" width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="textAndLogoContainer">
+        <div class="footer-contact-box">
+            <div class="footer-text-container" dir="rtl">
+              <p class="footer-p1">مهندسی کامپیوتر دانشگاه شیراز</p>
+              <p class="footer-p2">دانشجویان و اعضای فعال<br>انجمن ACM دانشگاه شیراز</p>
+            </div>
+            <div class="footer-logos">
+              <img class="footerImage acmImg" src="./images/mainPage/shirazuLogo.png" alt="">
+              <img class="footerImage acmImg" src="./images/mainPage/acm.png" alt="">
+            </div>
+        </div>
+        <!-- ! ADD LINKS and some animation -->
+        <div class="footer-contact-logos">
+          <a href="#"><img class="contact-logo telegramLogo" src="images/icons/telegram.svg" alt=""></a>
+          <a href="#"><img class="contact-logo instagramLogo" src="images/icons/instagram.svg" alt=""></a>
+          <a href="#"><img class="contact-logo twitterLogo" src="images/icons/twitter.svg" alt=""></a>
+          <a href="#"><img class="contact-logo linkedinLogo" src="images/icons/linkedin.svg" alt=""></a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="bottom-contact">
+      <p class="poshtibani">پشتیبانی</p>
+      <p class="bottom-contact-p"><img class="contact-logo phoneLogo" src="images/icons/phone-call.svg" alt="">09365723124</p>
+      <p class="bottom-contact-p"><img class="contact-logo" src="images/icons/email.svg" alt="">support@hocshiraz.ir</p>
     </div>
   </div>
 

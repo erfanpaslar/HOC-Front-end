@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ثبت نام</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/head.css">
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/signup.css">
+  <link rel="stylesheet" href="styles/scrollbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  
+  <link rel="stylesheet" href="https://majidh1.github.io/JalaliDatePicker/assets/demo.css">
+  <link rel="stylesheet" href="https://unpkg.com/@majidh1/jalalidatepicker/dist/jalaliDatepicker.min.css">
+  <script src="https://unpkg.com/@majidh1/jalalidatepicker@0.2.9/dist/jalaliDatepicker.min.js"></script>
+</head>
+<body id="body">
+  <div class="custom_scroll"> 
+    <div class="scroll_block" id="scroll_block"></div>
+  </div>
+  <div class="topBar boxShadow"  dir="rtl">
+    <div class="anotherFlex">
+
+      <div class="topBar-ul">
+        <a class="topBar-item logoText"><span class="zang">زنگ</span><img class="clockImg" src="./images/icons/alarm-clock.svg" alt=""></img><br><span>برنامه نویسی</span></a>
+      </div>
+      <div class="collapse">
+        <button class="collapseBtn" onclick="collapseToggle()">
+          <span id="topLine" class="collapseLine">-</span>
+          <span class="collapseLine">-</span>
+          <span id="bottomLine" class="collapseLine">-</span>
+        </button>
+        <div id="collapseContent" class="collapseContent collapseHideFirst">
+          <a class="topBar-item topBar-item-hover">خانه</a>
+          <a class="topBar-item topBar-item-hover">ورود</a>
+          <a class="topBar-item topBar-item-hover">ثبت نام</a>
+          <a class="topBar-item topBar-item-hover">باشگاه HOC</a>
+        </div>
+      </div>
+    </div>
+      <img class="topBar-item logo" src="./images/mainPage/hocLogo.png"></img>
+  </div>
+  <script src="js/head.js"></script>
+  <div class="dummyTopBar" dir="rtl"></div>
+
+  <!-- ********************** -->
+  <div class="loginFormWrapperWrapperWrapper">
+    <div class="loginFormWrapperWrapper">
+      <div class="loginFormWrapper">
+        <div class="loginForm" dir="rtl">
+
+          <h1 class="loginForm-text signupTxt" >ثبت نام</h1>
+          <form method="post" action="">
+
+            <div class="myDivider"><span>اطلاعات شخصی</span></div>
+
+            <div class="inputsWrapper2">
+              <div class="form-row">
+                <input type="text" name="first_name-<?= $args['form_id'] ?>" required>
+                <span>نام</span>
+              </div>
+              
+              <div class="form-row">
+                <input type="text" name="last_name-<?= $args['form_id'] ?>" required>
+                <span>نام خانوادگی</span>
+              </div>
+            </div>
+            
+            <div class="inputsWrapper2">
+              <div class="form-row">
+                <input type="email" name="user_email-<?= $args['form_id'] ?>" required>
+                <span>آدرس ایمیل</span>
+              </div>
+              
+              <div class="form-row">
+                <input type="number" name="mobile_number-<?= $args['form_id'] ?>" value="" required>
+                <span>شماره تلفن همراه</span>
+              </div>
+            </div>
+
+            <div class="inputsWrapper3">
+              <div class="form-row">
+                <input type="number" name="national_code-<?= $args['form_id'] ?>" required>
+                <span>کد ملی</span>
+              </div>
+              <div class="form-row">
+                <input id="jalaliDatePcker" class="datePicker" name="jalali_birthday-<?= $args['form_id'] ?>" required>
+                <span>تاریخ تولد</span>
+              </div>
+              <div class="form-row">
+                <input type="number" name="grade-<?= $args['form_id'] ?>" required>
+                <span>پایه ی تحصیلی</span>
+              </div>
+            </div>
+              
+            <div class="myDivider"><span>اطلاعات تکمیلی</span></div>
+            
+            <div class="inputsWrapper3">
+              <div class="form-row">
+                <input type="number" name="phone_number-<?= $args['form_id'] ?>" required>
+                <span>شماره تلفن ثابت</span>
+              </div>
+              <div class="form-row">
+                <input type="number" name="parent_mobile_number-<?= $args['form_id'] ?>" required>
+                <span>شماره همراه ولی</span>
+              </div>
+              <div class="form-row">
+                <input type="number" name="post_code-<?= $args['form_id'] ?>" required>
+                <span>کد پستی</span>
+              </div>
+            </div>
+            <div class="inputsWrapper1">
+              <div class="form-row">
+                <!-- ! it's text area not input ! -->
+                <textarea name="home_address-<?= $args['form_id'] ?>"  cols="30" rows="3" required></textarea>
+                <span>نشانی خانه</span>
+              </div>
+            </div>
+
+            <div class="myDivider"><span>اطلاعات اکانت</span></div>
+            
+            <div class="inputsWrapper2">
+              <div class="form-row">
+                <input type="text" name="user_login-<?= $args['form_id'] ?>" required>
+                <span>نام کاربری</span>
+              </div>
+              
+              <div class="form-row">
+                <input type="password" name="user_password-<?= $args['form_id'] ?>" required>
+                <span>رمز عبور</span>
+              </div>
+            </div>
+            
+            <div class="inputsWrapper2">
+              <div class="form-row">
+                <input type="password" name="confirm_user_password-<?= $args['form_id'] ?>" required>
+                <span>تایید رمز عبور</span>
+              </div>
+              
+              <div class="form-row">
+                <input type="text" name="attend_code-<?= $args['form_id'] ?>">
+                <span>کد معرف</span>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <button id="um-submit-btn" class="um-button" type="submit">ثبت نام</button>
+            </div>
+
+
+            <div class="form-row error">فرم را کامل پر کنید!</div>
+            <div class="form-row wantSignUp">قبلا ثبت نام کرده اید؟ <a class="signUpLink" href="#">ورود</a></div>
+            
+            <!-- <input type="hidden" name="form_id" value="<?= $args['form_id'] ?>">
+            <input type="hidden" name="um_request" size="25">
+            <?php wp_nonce_field('um_register_form'); ?> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jalaliDatePicker.js"></script>
+
+  <div class="footer">
+    <div class="theUpperContainer">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d5832.63025645966!2d52.51988106137905!3d29.629760291403244!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3fb213bc74dceebd%3A0xae84b25e83670a13!2z2K_Yp9mG2LTaqdiv2Ycg24wg2YXZh9mG2K_Ys9uMINuy2Iwg2K_Yp9mG2LTar9in2Ycg2LTbjNix2KfYsiwgRmFycyBQcm92aW5jZSwgU2hpcmF6LCBNb2xsYSBTYWRyYSBTdCwgSXJhbg!3m2!1d29.6285062!2d52.5185883!5e0!3m2!1sen!2s!4v1627674435390!5m2!1sen!2s" width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="textAndLogoContainer">
+        <div class="footer-contact-box">
+            <div class="footer-text-container" dir="rtl">
+              <p class="footer-p1">مهندسی کامپیوتر دانشگاه شیراز</p>
+              <p class="footer-p2">دانشجویان و اعضای فعال<br>انجمن ACM دانشگاه شیراز</p>
+            </div>
+            <div class="footer-logos">
+              <img class="footerImage acmImg" src="./images/mainPage/shirazuLogo.png" alt="">
+              <img class="footerImage acmImg" src="./images/mainPage/acm.png" alt="">
+            </div>
+        </div>
+        <!-- ! ADD LINKS and some animation -->
+        <div class="footer-contact-logos">
+          <a href="#"><img class="contact-logo telegramLogo" src="images/icons/telegram.svg" alt=""></a>
+          <a href="#"><img class="contact-logo instagramLogo" src="images/icons/instagram.svg" alt=""></a>
+          <a href="#"><img class="contact-logo twitterLogo" src="images/icons/twitter.svg" alt=""></a>
+          <a href="#"><img class="contact-logo linkedinLogo" src="images/icons/linkedin.svg" alt=""></a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="bottom-contact">
+      <p class="poshtibani">پشتیبانی</p>
+      <p class="bottom-contact-p"><img class="contact-logo phoneLogo" src="images/icons/phone-call.svg" alt="">09365723124</p>
+      <p class="bottom-contact-p"><img class="contact-logo" src="images/icons/email.svg" alt="">support@hocshiraz.ir</p>
+    </div>
+  </div>
+
+  <script src="js/scrollbar.js"></script>
+</body>
+</html>

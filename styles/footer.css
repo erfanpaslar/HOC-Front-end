@@ -3,6 +3,7 @@
   --footerColor:#eee;
 }
 .footer{
+  z-index:10!important;
   background:var(--footerBg);
   color:var(--footerColor);
   display:flex;
@@ -95,6 +96,8 @@
 }
 .theUpperContainer{
   display:flex;
+  background: var(--footerBg);
+  z-index: 2;
 }
 
 

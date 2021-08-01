@@ -11,6 +11,8 @@
 	--borderOnFocused:#7b5dfa;
 	--linkColor:#0000A0;
 	--inputBorder:#413DA3;
+	--myDividerBorder:#707070;
+	--error:#ff2441;
 }
 
 body{
@@ -40,7 +42,7 @@ body{
 	margin:.3rem auto
 }
 
-form > .form-row > span {
+.form-row > span {
 	background: var(--fieldPlaceHolderBg);
 	/* background: red; */
 	color: var(--fieldPlaceHolder);	
@@ -85,17 +87,19 @@ form > .form-row > span {
 	margin-left:.4rem ;
 	vertical-align:middle;
 }
-form > .form-row > input,
-form > .form-row > button {
+.form-row > input,
+.form-row > textarea,
+.form-row > button {
 	border-radius: 1rem;
-	padding: 1em 1rem;
+	padding: 1rem 1rem;
 	width: 100%;
 	margin:.3rem auto;
-	font-size:1rem
-	
+	font-size:.9rem;
+	font-family: "Vazir", sans-serif;
 }
 
-form > .form-row > button {
+
+.form-row > button {
 	width: 100%;
 	background: var(--btnBg);
 	border:none;
@@ -105,10 +109,12 @@ form > .form-row > button {
 	color:var(--btnColor);
 	font-family: "Vazir", sans-serif;
 	cursor: pointer;
+	transition: background .5s;
 }
-form > .form-row > button:hover, 
-form > .form-row > button:focus{
+.form-row > button:hover, 
+.form-row > button:focus{
 	background: var(--btnBgHover);
+	transition: background .5s;
 }
 .wantSignUp{
 	justify-content:center;
@@ -124,74 +130,97 @@ form > .form-row > button:focus{
 .signUpLink:hover{
 	color:var(--inputBorder)
 }
-form > .form-row > input {
+.form-row > input,
+.form-row > textarea {
 	transition: 50ms ease all;
 	width: 100%;
 	background: var(--fieldBg);
 }
 
-form > .form-row > input[type=text], form > .form-row > input[type=password] {
+.form-row > input[type=text], 
+.form-row > textarea, 
+.form-row > input[type=date], 
+.form-row > input[type=number], 
+.form-row > input[type=email], 
+.form-row > input[type=password] {
 	border: 1.7px solid var(--inputBorder);
 }
+.datePicker{
+	border: 1.7px solid var(--inputBorder)!important;
+}
 
-form > .form-row > input:valid + span {
+/* .form-row > input[type=date]{} */
+.form-row > input:valid + span,
+.form-row > textarea:valid + span {
 	top: -.4rem;
 	font-size: .90rem;
 	right:.5rem;
 	transform: scale(.8);
 }
 
-form > .form-row > input:invalid + span {
+.form-row > input:invalid + span{
 	top: 50%;
-
 }
-
-form > .form-row > input:focus + span {
+.form-row > textarea:invalid + span {
+	top: 1.5rem;
+}
+.form-row > input:focus + span,
+.form-row > textarea:focus + span {
 	top: -.4rem;
 	right:.5rem;
 	transform: scale(.8);
 	color:var(--borderOnFocused);
 }
 
-form > .form-row > input:required {
+.form-row > input:required,
+.form-row > textarea:required {
 	box-shadow: none;
 }
 
-form > .form-row > input:focus {
+.form-row > input:focus,
+.form-row > textarea:focus {
 	border-color: var(--borderOnFocused);
 	outline: none;
 	
 }
 
-form > .form-row > input:focus:invalid {
+.form-row > input:focus:invalid,
+.form-row > textarea:focus:invalid {
 	box-shadow: none;
 	top: 50%;
 }
 
-form > .form-row > input:focus:valid {
+.form-row > input:focus:valid
+.form-row > textarea:focus:valid {
 	top: 0;
 }
 
 .error{
 	margin-top:.5rem;
-	color:#ff2441;
+	color:var(--error);
 	font-size: .8rem;
 }
 
 .loginBottomImg{
-
 	display: none;
-	z-index: 1
+	z-index: 1;
+	overflow: hidden;
 }
 .loginTopImg{
 	display: none;
 }
 
+.scroll_block{
+  width: 0.7vw;
+  height: 20vh;
+}
+
 @media screen and (min-width: 850px) {
 	body{
-		background:var(--bg);
+		background:var(--bg)!important;
 		height:100vh;
-		overflow:hidden;
+		overflow:visible;
+		overflow-x: hidden;
 	}
 	.loginFormWrapperWrapperWrapper{
 		width:100%;
