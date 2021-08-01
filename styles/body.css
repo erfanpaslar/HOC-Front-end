@@ -45,10 +45,12 @@
 .bracket-right{
   float: right;
   margin-right:0rem;
+  position: relative;
+  top:-1rem
 }
 .bracket-left{
   position: absolute;
-  bottom: -1rem;
+  bottom: -1.5rem;
   left:-1rem;
   /* left:0rem; */
 }
@@ -90,8 +92,8 @@
   }
   .top-section-title{
     font-size: 2.5rem;
-    margin-top:0rem;
-    margin:.5rem 2rem 1rem;
+    /* margin-top:.1rem; */
+    margin:2rem 2rem 1rem;
     text-align: center;
   }
 
@@ -108,10 +110,12 @@
     left:-10%;
   }
   .bracket-right{
-    margin-right:5%;
+    position: relative;
+    margin-right:6%;
+    top:-1rem
   }
   .top-section-date{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     font-size:1.5rem;
     text-align: center;
   }
@@ -302,7 +306,8 @@
 
 /*** COLORFUL SECTION */
 .colorfulBg{
-  background-image:url("../images/mainPage/moreDetailBackground.png");
+  background-image:url("../images/mainPage/moreDetailBackground.jpg");
+  /* background-image:url("../images/mainPage/moreDetailBackground.png"); */
   background-size: cover;
   background-position: center;
   margin-right:0;
@@ -311,7 +316,7 @@
 .glass{
   display:flex;
   flex-wrap: wrap;
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
   width:100%;
   margin:0;
 

@@ -179,7 +179,9 @@ form > .form-row > input:focus:valid {
 }
 
 .loginBottomImg{
+
 	display: none;
+	z-index: 1
 }
 .loginTopImg{
 	display: none;
@@ -205,11 +207,14 @@ form > .form-row > input:focus:valid {
 	}
 
 	.loginFormWrapperWrapper{
-		width:70%;
+		max-width: 60rem;
+		width:80%;
 		height:80%;
-		background:#fff;
-		border-radius: 1rem 1rem 1rem 0;
+		min-height:30rem;
 
+		background:#fff;
+		border-radius: 1rem;
+		z-index: 2
 	}
   .loginFormWrapper{
 		display: flex;
@@ -219,7 +224,7 @@ form > .form-row > input:focus:valid {
 		background-image: url("../images/Login/loginImage.svg");
 		background-position:left ;
 		background-size: contain;
-		border-radius: 1rem 1rem 1rem 0;
+		border-radius: 1rem;
 		background-repeat: no-repeat;
 		/* background:blue */
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11), 0 6px 6px rgba(0, 0, 0, 0.11);

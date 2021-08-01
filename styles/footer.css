@@ -7,6 +7,7 @@
   color:var(--footerColor);
   display:flex;
   flex-direction:column;
+  overflow-x: hidden;
 }
 
 .textAndLogoContainer{
@@ -110,5 +111,11 @@
   }
   .poshtibani{
   margin: auto 10% 1rem 10%;  
+  }
+  .footer-p1{
+    font-size:1rem
+  }
+  .footer-p2{
+    font-size:.7rem
   }
 }
