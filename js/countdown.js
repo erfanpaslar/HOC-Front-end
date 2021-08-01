@@ -6,31 +6,13 @@ window.addEventListener("load", () => {
 	const elHours = document.querySelector(".hours");
 	const elMinutes = document.querySelector(".minutes");
 	const elSeconds = document.querySelector(".seconds");
-	let today = new Date();
 
-	todayHour = today.getHours();
-	todayMinute =today.getMinutes();
-	todaySecond = today.getSeconds();
-	todayDate = today.getDate();
-	todayMonth = today.getMonth();
-	todayYear = today.getFullYear();
-	
-	dueHour 	= 0;
-	dueMinute = 0;
-	dueSecond = 0;
-	dueDate 	= 2;
-	dueMonth 	= 7;
-	dueYear = 2021;
 	
 	const date1 = new Date();
-	console.log(date1)
-	//DM/D/Y
 	const date2 = new Date("2021-09-02");
-	console.log(date2)
 	const diffTime = Math.abs(date2 - date1);
 	const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-	console.log(diffDays)
 	
 
 

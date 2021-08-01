@@ -1,11 +1,3 @@
-:root{
-  --navBg:#004f84;
-  --navHover:#0076A8;
-  --navColor:#ffffff;
-
-  /* font sizes */
-  
-}
 .dummyTopBar{
   height:4rem;
   
@@ -96,7 +88,13 @@
 }
 .collapseBtn{
   display:none;
-  background:var(--navBg)
+  background:var(--navBg);
+  cursor:pointer;
+  transition:background .5s;
+}
+.collapseBtn:hover{
+  background:var(--navHover);
+  transition:background .5s;
 }
 @media screen and (max-width: 768px) {
   .topBar{
@@ -162,9 +160,7 @@
     }
   }
 
-  .collapseBtn:hover{
-    background:var(--navHover);
-  }
+  
   .menuIcon{
     max-width:1.5rem;
     margin-top:3px

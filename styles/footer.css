@@ -36,6 +36,7 @@
 .footer-logos{
   display:flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .footerImage{
   width:4rem;
@@ -51,7 +52,7 @@
   margin:auto .75rem;
   vertical-align:middle;
   transition: transform .2s;
-
+  cursor:pointer;
 }
 
 .contact-logo:hover{
@@ -59,6 +60,10 @@
   transition: transform .2s;
 }
 
+.contactLink{
+  color:#fff;
+  text-decoration: none;
+}
 .telegramLogo:hover{
 }
 .instagramLogo:hover{

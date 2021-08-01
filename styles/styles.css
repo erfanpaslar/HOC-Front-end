@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
 :root{
   font-family: "Vazir", sans-serif;
   --bg:#DFDEE7;
@@ -11,13 +16,18 @@
   --articleBorder:#363377;
   --articleColor:#41417C;
   --qnaColor:#413DA3;
+  /* nav */
+    --navBg:#004f84;
+    --navHover:#0076A8;
+    --navColor:#ffffff;
+    --scrollColor:#004f8455;
 }
 body{
   margin: 0;
   background:var(--bg);
   font-size: 62.5%;
   font-family: "Vazir", sans-serif;
-
+  overflow: overlay;
 }
 
 .temp{
@@ -26,4 +36,22 @@ body{
 
 .boxShadow{
   box-shadow: 0 10px 20px var(--boxShadow), 0 6px 6px var(--boxShadow);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 7px;
+  cursor: auto;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #00000000;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: var(--scrollColor);
 }

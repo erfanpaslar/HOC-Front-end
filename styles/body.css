@@ -1,4 +1,3 @@
-
 .top-section{
   background-color:#000;
   height:110vh;
@@ -68,6 +67,8 @@
   border-radius: .5rem;
   cursor:pointer;
   transition: background .3s;
+  text-align: center;
+  text-decoration: none;
 }
 .buttons:hover{
   background-color: var(--btnBgHover);

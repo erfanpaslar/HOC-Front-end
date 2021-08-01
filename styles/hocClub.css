@@ -1,0 +1,98 @@
+
+.mainWrapper{
+  background-image: url("../images/mainPage/hocClubBg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin:0;
+  display:flex;
+}
+.clubContainerWrapper{
+  display:flex;
+  margin:4rem 3rem 7rem;
+  align-items: flex-start;
+  justify-content: center;
+  width:100%;
+}
+
+.clubContainer{
+  background:#fff;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../images/Login/hocClubImage.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:left;
+  align-items: center;
+  justify-content: right;
+  width: 80%;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11), 0 6px 6px rgba(0, 0, 0, 0.11);
+
+}
+.hocClub-rightSide{
+  flex-direction: column;
+  width:50%;
+  margin:2rem 10%;
+}
+.hocClub-likeBtn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:#00A7A1;
+  color:#fff;
+  margin: auto;
+  width:90%;
+  height:4.5rem;
+  font-size:2.2rem;
+  border-radius: .7rem;
+  margin-bottom: 1.5rem;
+}
+
+.hocClub-mainTitle{
+  margin:auto;
+  font-weight: normal;
+  text-align: center;
+  font-size:1.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.hocClub-p1{
+  font-size:1rem
+}
+
+.hocClub-title{
+  color:var(--articleColor);
+  font-size:1.1rem;
+  margin-bottom: .2rem;
+} 
+
+.hocClub-p{
+  margin-top:.2rem;
+  font-size:.9rem
+}
+.centerIt{
+  margin:auto;
+  text-align: center;
+  font-weight:600;
+}
+
+@media screen and (max-width: 1050px) {
+  .clubContainer{
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .clubContainer{
+    width: 100%;
+    background-image: none;
+    justify-content: center;
+  }
+  .hocClub-rightSide{
+    width:90%;
+  }
+  .clubContainerWrapper{
+    margin:3rem 1rem;
+  }
+}

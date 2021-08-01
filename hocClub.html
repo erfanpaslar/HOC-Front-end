@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="fa-IR" dir="">
-
+<html lang="fa-IR" dir=""></html>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ورود</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>باشگاه HOC</title>
   <link rel="shortcut icon" href="hocIcon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/head.css">
-  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/hocClub.css">
   <link rel="stylesheet" href="styles/footer.css">
-
 </head>
 <body id="body">
+  
   <div class="topBar boxShadow"  dir="rtl">
     <div class="anotherFlex">
       <div class="topBar-ul">
@@ -37,54 +37,59 @@
   </div>
   <script src="js/head.js"></script>
   <div class="dummyTopBar" dir="rtl"></div>
-  <!-- ******************************** -->
 
-  <div class="loginBottomImg"><img src="./images/Login/loginBottom.svg" alt=""></div>
-  <div class="loginTopImg"><img src="./images/Login/loginTop.svg" alt=""></div>
-  <div class="loginFormWrapperWrapperWrapper">
-    <div class="loginFormWrapperWrapper">
-      <div class="loginFormWrapper">
-        <div class="loginForm" dir="rtl">
+  <!-- ********************** -->
+  
+  <div class="mainWrapper">
 
-          <h1 class="loginForm-text" >ورود به حساب کاربری</h1>
-          <form method="post" action="">
-            <div class="form-row">
-              <!-- <input type="text" required> -->
-              <input type="text" name="username-<?=$args['form_id']?>"  required>
-              <span><img class="placeholderIcon" src="./images/icons/user.svg" alt="">نام کاربری یا ایمیل</span>
-            </div>
-
-            <div class="form-row">
-              <!-- <input type="password" required> -->
-              <input type="password" name="uer_password-<?=$args['form_id']?>" required>
-              <span><img class="placeholderIcon" src="./images/icons/padlock.svg" alt="">رمز عبور</span>
-            </div>
-
-            <div class="form-row forgotRow"><a class="forgot" href="#">رمز عبور خود را فراموش کردید؟</a></div>
+    <div class="clubContainerWrapper" dir="rtl">
+      <div class="clubContainer">
+        <div class="hocClub-rightSide">
+          <div class="hocClub-likeBtn">HOC club</div>
+          <h1 class="hocClub-mainTitle">به باشگاه اچ او سی خوش آمدید</h1>
+          <p class="hocClub-p1">اینجا قراره به همدیگه نشون بدیم کیا بیشتر از همه طرفدار و فن واقعی HOC 
+            هستن و ما هم براشون سوپرایز داریم!</p>
             
-            <div class="checkBox-row remember">
-              <input class="checkBox" type="checkbox" name="remember" value="1">
-              <label>مرا به خاطر بسپار</label>
-            </div>
+            <article class="hocClub-text">
+              <h2 class="hocClub-title">اما چطوری میشه طرفداریمون رو نشون بدیم؟!</h2>
+              <p class="hocClub-p">یه فرمول طلایی داره : تا میتونی امتیاز جمع کن و از بقیه جلو بزن!</p>
+            </article>
             
-            <div class="form-row">
-              <!-- <button type="submit">ورود</button> -->
-              <button type="submit" id="um-submit-btn" class="um-buttton">ورود</button>
-            </div>
-            <div class="form-row error">نام کاربری یا رمز عبور اشتباه است!</div>
-            <div class="form-row wantSignUp">هنوز ثبت نام نکردید؟ <a class="signUpLink" href="#">ثبت نام</a></div>
+            <article class="hocClub-text">
+              <h2 class="hocClub-title">حالا چطوری میشه امتیاز گرفت؟</h2>
+              <p class="hocClub-p">خیلی ساده است! کافیه بعد از اینکه توی رویداد ثبت نام کردی کد دعوتی که برات میاد رو به 
+                دوستات بدی و اونا با کد دعوت تو ثبت نامشون رو انجام بدن تا هم خودت و هم دوستت
+                امتیاز بگیرین</p>
+        </article>
+        
+        <article class="hocClub-text">
+          <h2 class="hocClub-title">اما صبر کن! این همه ماجرا نیست...!</h2>
+          <p class="hocClub-p">روش های مختلف دیگه ای هم وجود داره که میتونی با انجامشون امتیازت رو بالاتر ببری
+            و تبدیل به شرکت کننده ویژه رویداد اچ او سی امسال بشی. این روش ها به زودی توی
+            همین صفحه در دسترس قرار می‌گیرن.</p>
+          </article>
           
-            <!-- 
-            <input type="hidden" name="form_id" value="<?=$args['form_id']?>">
-            <input type="hidden" name="um_request" value="" size="25">
-            <?php wp_nonce_field('um_login_form'); ?> 
-            -->
-          </form>
-        </div>
+        <article class="hocClub-text">
+          <h2 class="hocClub-title">چی؟! راجب سوپرایز نگفتم؟!</h2>
+          <p class="hocClub-p">اصل کار اینجاست! HOC احترام ویژه ای برای شرکت‌کنندگان ویژه‌اش قائله و به نفراتی 
+            که تونستن بیشترین امتیازات رو جمع کنن، بابت حمایتشون سپاسگزاری ویژه ای میکنه والبته 
+            جایزه های ویژه ای هم بهشون تقدیم میکنه.</p>
+          </article>
+        
+        <article class="hocClub-text">
+          <h2 class="hocClub-title">پس منتظر چی هستی؟!</h2>
+          <p class="hocClub-p">وقت رو هدر نده و تا میتونی امتیاز جمع کن. راستی یادت نره تا روز برگزاری همایش میتونی
+            امتیاز بگیری و از طریق همین سایت میتونی امتیازات خودت و بقیه رو مشاهده کنی.</p>
+        </article>
+        
+        
+        <p class="hocClub-title centerIt">HOC برات آرزوی موفقیت داره!</p>
       </div>
     </div>
   </div>
+</div>
 
+  
   <!-- ********************** -->
   <div class="footer">
     <div class="theUpperContainer">
