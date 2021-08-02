@@ -41,7 +41,7 @@ input[type=number]::-webkit-outer-spin-button {
 	padding: 1.5em 1rem;
 }
 .form-row > button {
-  border-radius: 1.5rem;
+  border-radius: 1rem;
 	padding: .5rem 2rem;
   font-size:1rem;
   margin-top:2rem
@@ -126,7 +126,7 @@ input[type=number]::-webkit-outer-spin-button {
 		background-size: contain;
 		border-radius: 1rem;
 		background-repeat: no-repeat;
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11), 0 6px 6px rgba(0, 0, 0, 0.11);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11), 0 6px 6px rgba(102, 86, 86, 0.11);
 	}
 	.loginForm{
 		background: transparent;

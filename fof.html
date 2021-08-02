@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="fa-IR" dir="">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ورود</title>
+  <title>404</title>
   <link rel="shortcut icon" href="hocIcon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/head.css">
-  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/fof.css">
   <link rel="stylesheet" href="styles/footer.css">
 
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v28.0.0/dist/font-face.css" rel="stylesheet" type="text/css">
 
-
 </head>
-<body id="body">
+<body>
   <div class="topBar boxShadow"  dir="rtl">
     <div class="anotherFlex">
       <div class="topBar-ul">
@@ -40,52 +38,24 @@
   </div>
   <script src="js/head.js"></script>
   <div class="dummyTopBar" dir="rtl"></div>
-  <!-- ******************************** -->
+  <!-- ********************** -->
 
-  <div class="loginBottomImg"><img src="./images/Login/loginBottom.svg" alt=""></div>
-  <div class="loginTopImg"><img src="./images/Login/loginTop.svg" alt=""></div>
-  <div class="loginFormWrapperWrapperWrapper">
-    <div class="loginFormWrapperWrapper">
-      <div class="loginFormWrapper">
-        <div class="loginForm" dir="rtl">
-
-          <h1 class="loginForm-text" >ورود به حساب کاربری</h1>
-          <form method="post" action="">
-            <div class="form-row">
-              <!-- <input type="text" required> -->
-              <input type="text" name="username-<?=$args['form_id']?>"  required>
-              <span><img class="placeholderIcon" src="./images/icons/user.svg" alt="">نام کاربری یا ایمیل</span>
+  <div class="fof-wrapperWrapper">
+    <img class="fofBgImage fof-sad" src="./images/fof/sad.svg" alt="">
+    <div class="fof-wrapper">
+      <div class="circles">
+        <div class="circleOut">
+          <div class="circleIn">
+            <img class="fofImg" src="./images/fof/fof.png" alt="">
+            <p class="fof-mediumText">!اِی وُی</p>
+            <p class="fofText">لینکی که دنبالش میگردی خرابه
+              یا وجود نداره</p>
+              <a href="index.html" class="fof-btnHome">خانه</a>
             </div>
-
-            <div class="form-row">
-              <!-- <input type="password" required> -->
-              <input type="password" name="uer_password-<?=$args['form_id']?>" required>
-              <span><img class="placeholderIcon" src="./images/icons/padlock.svg" alt="">رمز عبور</span>
-            </div>
-
-            <div class="form-row forgotRow"><a class="forgot" href="#">رمز عبور خود را فراموش کردید؟</a></div>
-            
-            <div class="checkBox-row remember">
-              <input class="checkBox" type="checkbox" name="remember" value="1">
-              <label>مرا به خاطر بسپار</label>
-            </div>
-            
-            <div class="form-row">
-              <!-- <button type="submit">ورود</button> -->
-              <button type="submit" id="um-submit-btn" class="um-buttton">ورود</button>
-            </div>
-            <div class="form-row error">نام کاربری یا رمز عبور اشتباه است!</div>
-            <div class="form-row wantSignUp">هنوز ثبت نام نکردید؟ <a class="signUpLink" href="#">ثبت نام</a></div>
-          
-            <!-- 
-            <input type="hidden" name="form_id" value="<?=$args['form_id']?>">
-            <input type="hidden" name="um_request" value="" size="25">
-            <?php wp_nonce_field('um_login_form'); ?> 
-            -->
-          </form>
-        </div>
+          </div>
       </div>
     </div>
+    <img class="fofBgImage fof-connect" src="./images/fof/connect.svg" alt="">
   </div>
 
   <!-- ********************** -->
@@ -111,7 +81,6 @@
           <a href="#"><img class="contact-logo twitterLogo" src="images/icons/twitter.svg" alt=""></a>
           <a href="#"><img class="contact-logo linkedinLogo" src="images/icons/linkedin.svg" alt=""></a>
         </div>
-        
       </div>
     </div>
     <div class="bottom-contact">
@@ -120,6 +89,5 @@
       <p class="bottom-contact-p"><img class="contact-logo" src="images/icons/email.svg" alt=""><a class="contactLink" href="mailto:support@hocshiraz.ir">support@hocshiraz.ir</a></p>
     </div>
   </div>
-
 </body>
 </html>

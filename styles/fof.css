@@ -1,0 +1,140 @@
+body{
+  overflow-x: hidden!important;
+
+}
+.fof-wrapperWrapper{
+  display:flex;
+  height:96vh;
+  width:100%;
+  justify-content:center;
+  /* align-items:center; */
+  align-items: flex-start;
+}
+.fof-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:5vh;
+  transition: transform .5s;
+}
+
+.circles{
+  display: flex;
+  /* justify-content:center; */
+  /* align-items:center; */
+  align-items: flex-start;
+  
+}
+.circleOut{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height: 80vh;
+  width:91vh;
+  border-radius: 50%;
+  background: #A5C1D4;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+
+  /* clip-path: ellipse(48% 45% at 50% 50%); */
+}
+
+.circleIn{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  height: 72vh;
+  width:72vh;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.fofImg{
+  max-width:30vh;
+}
+
+.fof-mediumText{
+  font-size:2rem;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.fofText{
+  text-align: center;
+  font-size:1.2rem;
+  margin:1rem 7rem 1.5rem;
+  color:#505050
+}
+
+.fof-btnHome{
+  background: #00839C;
+  color:#fff;
+  font-size:1.1rem;
+  margin-top:1rem;
+  padding:.6rem 4.5rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  transition: background .5s;
+}
+
+.fof-btnHome:hover{
+  background: #0ba6c5;
+  transition: background .5s;
+}
+.fofBgImage{
+  position: absolute;
+  z-index: -1;
+}
+
+.fof-connect{
+  width:30vw;
+  right:7vw;
+  top:16vh;
+}
+.fof-sad{
+  width:18vw;
+  left:14vw;
+  top:50vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .fof-connect{
+    right:2vw;
+    top:18vh;
+  }
+  .fof-sad{
+    left:5vw;
+    top:65vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  
+  }
+  .fof-wrapper{
+    transform: scale(.8);
+    transition: transform .5s;
+    margin-top:0vh;
+
+  }
+  .fof-connect{
+    width:45vw;
+    right:0vw;
+    top:17vh;
+  }
+  .fof-sad{
+    width:25vw;
+    left:15vw;
+    top:70vh;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .fof-wrapper{
+    transform: scale(.6);
+    transition: transform .5s;
+  }
+  
+}
