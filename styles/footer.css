@@ -61,6 +61,9 @@
   color:#fff;
   text-decoration: none;
 }
+.hoc-footer-contactLink:hover{
+  color:#ddd;
+}
 .hoc-footer-map{
   margin:2rem 10%
 }

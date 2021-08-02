@@ -30,7 +30,7 @@
   vertical-align: middle;
   text-decoration: none;
   /* background-color:red */
-  color:var(--navColor);
+  color:var(--navColor)!important;
   cursor: pointer;
   transition: background .5s;
   border-radius: .5rem;
@@ -38,7 +38,7 @@
 
 }
 .hoc-head-topBar-item-hover:hover{
-  background: var(--navHover);
+  background: var(--navHover)!important;
   transition: background .5s;
   border-radius: .6rem;
 }

@@ -20,7 +20,7 @@
     --navBg:#004f84;
     --navHover:#0076A8;
     --navColor:#ffffff;
-    --scrollColor:#004f8455;
+    --scrollColor:#a7a7a755;
 }
 body{
   margin: 0;
@@ -29,16 +29,6 @@ body{
   font-family: "Vazir", sans-serif!important;
   overflow: overlay;
   
-}
-a{
-  color:var(--titleColor)!important;
-
-}
-a:hover{
-  color:var(--titleColor)!important;
-}
-.temp{
-  height:200vh;
 }
 
 .boxShadow{

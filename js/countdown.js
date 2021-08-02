@@ -2,10 +2,10 @@
 window.addEventListener("load", () => {
 	
 	
-	const elDays = document.querySelector(".days");
-	const elHours = document.querySelector(".hours");
-	const elMinutes = document.querySelector(".minutes");
-	const elSeconds = document.querySelector(".seconds");
+	const elDays = document.querySelector(".hoc-countdown-days");
+	const elHours = document.querySelector(".hoc-countdown-hours");
+	const elMinutes = document.querySelector(".hoc-countdown-minutes");
+	const elSeconds = document.querySelector(".hoc-countdown-seconds");
 
 	
 	const date1 = new Date();
@@ -70,26 +70,26 @@ window.addEventListener("load", () => {
 	}
 
 	function animateFlip(element, value) {
-		const valueInDom = element.querySelector(".bottom-back").innerText;
+		const valueInDom = element.querySelector(".hoc-countdown-bottom-back").innerText;
 		const currentValue = value < 10 ? "0" + value : "" + value;
 
 		if (valueInDom === currentValue) return;
 
-		element.querySelector(".top-back span").innerText = currentValue;
-		element.querySelector(".bottom-back span").innerText = currentValue;
+		element.querySelector(".hoc-countdown-top-back span").innerText = currentValue;
+		element.querySelector(".hoc-countdown-bottom-back span").innerText = currentValue;
 
-		gsap.to(element.querySelector(".top"), 0.7, {
+		gsap.to(element.querySelector(".hoc-countdown-top"), 0.7, {
 			rotationX: "-180deg",
 			transformPerspective: 300,
 			ease: Quart.easeOut,
 			onComplete: function () {
-				element.querySelector(".top").innerText = currentValue;
-				element.querySelector(".bottom").innerText = currentValue;
-				gsap.set(element.querySelector(".top"), { rotationX: 0 });
+				element.querySelector(".hoc-countdown-top").innerText = currentValue;
+				element.querySelector(".hoc-countdown-bottom").innerText = currentValue;
+				gsap.set(element.querySelector(".hoc-countdown-top"), { rotationX: 0 });
 			}
 		});
 
-		gsap.to(element.querySelector(".top-back"), 0.7, {
+		gsap.to(element.querySelector(".hoc-countdown-top-back"), 0.7, {
 			rotationX: 0,
 			transformPerspective: 300,
 			ease: Quart.easeOut,
