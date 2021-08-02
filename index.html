@@ -18,6 +18,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="styles/slide.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   
   <link rel="stylesheet" href="styles/countdown.css">
 
@@ -29,7 +30,7 @@
   <div class="topBar boxShadow"  dir="rtl">
     <div class="anotherFlex">
       <div class="topBar-ul">
-        <a class="topBar-item logoText" href="index.html"><span class="zang">زنگ</span><img class="clockImg" src="./images/icons/alarm-clock.svg" alt=""></img><br><span>برنامه نویسی</span></a>
+        <a class="topBar-item logoText" href="index.html" ><span class="zang">زنگ</span><img class="clockImg" src="./images/icons/alarm-clock.svg" alt=""></img><br><span>برنامه نویسی</span></a>
       </div>
       <div class="collapse">
         <button class="collapseBtn" onclick="collapseToggle()">
@@ -66,8 +67,8 @@
       <main class="main-content" dir="ltr">
         
         <div class="container-countdown">
-          <a class="buttons nowSignupBtn" href="signup.html">همین حالا ثبت نام کنید</a>
-          <div class="mainCountdown">
+          <a class="buttons nowSignupBtn" href="signup.html" >همین حالا ثبت نام کنید</a>
+          <div class="mainCountdown" data-aos="fade">
             <section class="countdown-block">
               <span class="days time-element">
                 <span class="top">00</span>
@@ -131,7 +132,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
   <div class="middle-section"  dir="rtl">
-    <article class="article boxShadow">
+    <article class="article boxShadow" data-aos="slide-right">
       <div class="article-text">
         <h3 class="article-title">زنگ برنامه نویسی چیست ؟</h3>
         <img class="article-image2" src="./images/mainPage/hocImage.png" alt="">
@@ -142,7 +143,7 @@
       <img class="article-image" src="./images/mainPage/hocImage.png" alt="">
     </article>
 
-    <article class="article boxShadow">
+    <article class="article boxShadow" data-aos="slide-left">
       <div class="article-text">
         <h3 class="article-title">چرا برنامه نویسی یاد بگیریم ؟</h3>
         <img class="article-image2" src="./images/mainPage/target.png" alt="">
@@ -154,7 +155,7 @@
       <img class="article-image" src="./images/mainPage/target.png" alt="">
     </article>
     
-    <article class="article boxShadow">
+    <article class="article boxShadow" data-aos="slide-right">
       <div class="article-text">
         <h3 class="article-title">زنگ برنامه‌نویسی چیه؟</h3>
         <img class="article-image2" src="./images/mainPage/hocLogo.png" alt="">
@@ -182,19 +183,19 @@
 
   <div class="middle-section colorfulBg" dir="rtl">
     <div class="glass grid grid--1x3">
-      <article class="littleCard">
-        <div class="littleCard-img-wrapper">
+      <article class="littleCard" data-aos="fade-up-right" >
+        <div class="littleCard-img-wrapper" >
           <img class="littleCard-img" src="./images/mainPage/first.jpg" alt="" srcset="">
         </div>
         <p class="littleCard-p">دانش آموزان در حال یادگیری در بیش از 45 زبان مختلف هستند</p>
       </article>
-      <article class="littleCard">
+      <article class="littleCard" data-aos="fade-up">
         <div class="littleCard-img-wrapper">
           <img class="littleCard-img" src="./images/mainPage/second.jpg" alt="" srcset="">
         </div>
         <p class="littleCard-p">بیش از 100 میلیون دانش آموز HOC را امتحان کرده اند.</p>
       </article>
-      <article class="littleCard">
+      <article class="littleCard" data-aos="fade-up-left">
         <div class="littleCard-img-wrapper">
           <img class="littleCard-img" src="./images/mainPage/third.jpg" alt="" srcset="">
         </div>
@@ -210,43 +211,43 @@
         <h3 class="article-title bigTitle">سوالات متداول </h3>
         <img class="questionMark questionMarkRight" src="images/icons/question.svg" alt="">
       </div>
-      <div class="bigArticleText">
+      <div class="bigArticleText" data-aos="fade" >
         <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
         <p class="article-p titanic">
           خالد حسینی تو رمان باد بادک باز مینویسه : ﻣﺮﺩ ﺁﻫﺴﺘﻪ ﺩﺭ ﮔﻮﺵ ﻓﺮﺯﻧﺪ ﺗﺎﺯﻩ ﺑﻪ ﺑﻠﻮﻍ ﺭﺳﯿﺪﻩ ﺍﺵ ﺑﺮﺍﯼ ﭘﻨﺪ ﭼﻨﯿﻦ ﻧﺠﻮﺍ ﮐﺮﺩ : ” ﭘﺴﺮﻡ ﺩﺭ ﺯﻧﺪﮔﯽ ﻫﺮﮔﺰ ﺩﺯﺩﯼ ﻧﮑﻦ ” ﭘﺴﺮ ﻣﺘﻌﺠﺐ ﻭ ﻣﺒﻬﻮﺕ ﺑﻪ ﭘﺪﺭ ﻧﮕﺎﻩ ﮐﺮﺩ ﺑﺪﯾﻦ ﻣﻌﻨﺎ ﮐﻪ ﺍﻭ ﻫﺮﮔﺰ ﺩﺳﺖ ﮐﺞ ﻧﺪﺍﺷﺘﻪ ﭘﺪﺭ ﺑﻪ ﻧﮕﺎﻩ ﻣﺘﻌﺠﺐ ﻓﺮﺯﻧﺪ ﻟﺒﺨﻨﺪﯼ ﺯﺩ ﻭ ﺍﺩﺍﻣﻪ ﺩﺍﺩ </p>
       </div>
         
-      <div class="bigArticleText">
+      <div class="bigArticleText" data-aos="fade">
         <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
         <p class="article-p titanic">ﺩﺭ ﺯﻧﺪﮔﯽ ﺩﺭﻭﻍ ﻧﮕﻮ ﭼﺮﺍ ﮐﻪ ﺍﮔﺮ ﮔﻔﺘﯽ ﺻﺪﺍﻗﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﯿﺎﻧﺖ ﻧﮑﻦ ﮐﻪ ﺍﮔﺮ ﮐﺮﺩﯼ ﻋﺸﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﺸﻮﻧﺖ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﻣﺤﺒﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﻧﺎ ﺣﻖ ﻧﮕﻮ ﺍﮔﺮ ﮔﻔﺘﯽ ﺣﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺑﯽ ﺣﯿﺎﯾﯽ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﺷﺮﺍﻓﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍی... ﭘﺲ ﺩﺭ ﺯﻧﺪﮔﯽ ﻓﻘﻂ ﺩﺯﺩﯼ نکن !</p>
       </div>
-      <div class="bigArticleText">
+      <div class="bigArticleText" data-aos="fade">
         <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
         <p class="article-p titanic">
           خالد حسینی تو رمان باد بادک باز مینویسه : ﻣﺮﺩ ﺁﻫﺴﺘﻪ ﺩﺭ ﮔﻮﺵ ﻓﺮﺯﻧﺪ ﺗﺎﺯﻩ ﺑﻪ ﺑﻠﻮﻍ ﺭﺳﯿﺪﻩ ﺍﺵ ﺑﺮﺍﯼ ﭘﻨﺪ ﭼﻨﯿﻦ ﻧﺠﻮﺍ ﮐﺮﺩ : ” ﭘﺴﺮﻡ ﺩﺭ ﺯﻧﺪﮔﯽ ﻫﺮﮔﺰ ﺩﺯﺩﯼ ﻧﮑﻦ ” ﭘﺴﺮ ﻣﺘﻌﺠﺐ ﻭ ﻣﺒﻬﻮﺕ ﺑﻪ ﭘﺪﺭ ﻧﮕﺎﻩ ﮐﺮﺩ ﺑﺪﯾﻦ ﻣﻌﻨﺎ ﮐﻪ ﺍﻭ ﻫﺮﮔﺰ ﺩﺳﺖ ﮐﺞ ﻧﺪﺍﺷﺘﻪ ﭘﺪﺭ ﺑﻪ ﻧﮕﺎﻩ ﻣﺘﻌﺠﺐ ﻓﺮﺯﻧﺪ ﻟﺒﺨﻨﺪﯼ ﺯﺩ ﻭ ﺍﺩﺍﻣﻪ ﺩﺍﺩ </p>
       </div>
         
-      <div class="bigArticleText">
+      <div class="bigArticleText" data-aos="fade">
         <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
         <p class="article-p titanic">ﺩﺭ ﺯﻧﺪﮔﯽ ﺩﺭﻭﻍ ﻧﮕﻮ ﭼﺮﺍ ﮐﻪ ﺍﮔﺮ ﮔﻔﺘﯽ ﺻﺪﺍﻗﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﯿﺎﻧﺖ ﻧﮑﻦ ﮐﻪ ﺍﮔﺮ ﮐﺮﺩﯼ ﻋﺸﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﺸﻮﻧﺖ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﻣﺤﺒﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﻧﺎ ﺣﻖ ﻧﮕﻮ ﺍﮔﺮ ﮔﻔﺘﯽ ﺣﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺑﯽ ﺣﯿﺎﯾﯽ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﺷﺮﺍﻓﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍی... ﭘﺲ ﺩﺭ ﺯﻧﺪﮔﯽ ﻓﻘﻂ ﺩﺯﺩﯼ نکن !</p>
       </div>
-      <div class="bigArticleText">
+      <div class="bigArticleText" data-aos="fade">
         <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
         <p class="article-p titanic">
           خالد حسینی تو رمان باد بادک باز مینویسه : ﻣﺮﺩ ﺁﻫﺴﺘﻪ ﺩﺭ ﮔﻮﺵ ﻓﺮﺯﻧﺪ ﺗﺎﺯﻩ ﺑﻪ ﺑﻠﻮﻍ ﺭﺳﯿﺪﻩ ﺍﺵ ﺑﺮﺍﯼ ﭘﻨﺪ ﭼﻨﯿﻦ ﻧﺠﻮﺍ ﮐﺮﺩ : ” ﭘﺴﺮﻡ ﺩﺭ ﺯﻧﺪﮔﯽ ﻫﺮﮔﺰ ﺩﺯﺩﯼ ﻧﮑﻦ ” ﭘﺴﺮ ﻣﺘﻌﺠﺐ ﻭ ﻣﺒﻬﻮﺕ ﺑﻪ ﭘﺪﺭ ﻧﮕﺎﻩ ﮐﺮﺩ ﺑﺪﯾﻦ ﻣﻌﻨﺎ ﮐﻪ ﺍﻭ ﻫﺮﮔﺰ ﺩﺳﺖ ﮐﺞ ﻧﺪﺍﺷﺘﻪ ﭘﺪﺭ ﺑﻪ ﻧﮕﺎﻩ ﻣﺘﻌﺠﺐ ﻓﺮﺯﻧﺪ ﻟﺒﺨﻨﺪﯼ ﺯﺩ ﻭ ﺍﺩﺍﻣﻪ ﺩﺍﺩ </p>
       </div>
         
-      <div class="bigArticleText">
+      <div class="bigArticleText" data-aos="fade">
         <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
         <p class="article-p titanic">ﺩﺭ ﺯﻧﺪﮔﯽ ﺩﺭﻭﻍ ﻧﮕﻮ ﭼﺮﺍ ﮐﻪ ﺍﮔﺮ ﮔﻔﺘﯽ ﺻﺪﺍﻗﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﯿﺎﻧﺖ ﻧﮑﻦ ﮐﻪ ﺍﮔﺮ ﮐﺮﺩﯼ ﻋﺸﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﺸﻮﻧﺖ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﻣﺤﺒﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﻧﺎ ﺣﻖ ﻧﮕﻮ ﺍﮔﺮ ﮔﻔﺘﯽ ﺣﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺑﯽ ﺣﯿﺎﯾﯽ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﺷﺮﺍﻓﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍی... ﭘﺲ ﺩﺭ ﺯﻧﺪﮔﯽ ﻓﻘﻂ ﺩﺯﺩﯼ نکن !</p>
       </div>
-      <div class="bigArticleText">
+      <div class="bigArticleText" data-aos="fade">
         <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
         <p class="article-p titanic">
           خالد حسینی تو رمان باد بادک باز مینویسه : ﻣﺮﺩ ﺁﻫﺴﺘﻪ ﺩﺭ ﮔﻮﺵ ﻓﺮﺯﻧﺪ ﺗﺎﺯﻩ ﺑﻪ ﺑﻠﻮﻍ ﺭﺳﯿﺪﻩ ﺍﺵ ﺑﺮﺍﯼ ﭘﻨﺪ ﭼﻨﯿﻦ ﻧﺠﻮﺍ ﮐﺮﺩ : ” ﭘﺴﺮﻡ ﺩﺭ ﺯﻧﺪﮔﯽ ﻫﺮﮔﺰ ﺩﺯﺩﯼ ﻧﮑﻦ ” ﭘﺴﺮ ﻣﺘﻌﺠﺐ ﻭ ﻣﺒﻬﻮﺕ ﺑﻪ ﭘﺪﺭ ﻧﮕﺎﻩ ﮐﺮﺩ ﺑﺪﯾﻦ ﻣﻌﻨﺎ ﮐﻪ ﺍﻭ ﻫﺮﮔﺰ ﺩﺳﺖ ﮐﺞ ﻧﺪﺍﺷﺘﻪ ﭘﺪﺭ ﺑﻪ ﻧﮕﺎﻩ ﻣﺘﻌﺠﺐ ﻓﺮﺯﻧﺪ ﻟﺒﺨﻨﺪﯼ ﺯﺩ ﻭ ﺍﺩﺍﻣﻪ ﺩﺍﺩ </p>
       </div>
         
-      <div class="bigArticleText">
+      <div class="bigArticleText" data-aos="fade">
         <h3 class="article-title bigArticleMidTitle">زنگ برنامه‌نویسی چیه؟</h3>
         <p class="article-p titanic">ﺩﺭ ﺯﻧﺪﮔﯽ ﺩﺭﻭﻍ ﻧﮕﻮ ﭼﺮﺍ ﮐﻪ ﺍﮔﺮ ﮔﻔﺘﯽ ﺻﺪﺍﻗﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﯿﺎﻧﺖ ﻧﮑﻦ ﮐﻪ ﺍﮔﺮ ﮐﺮﺩﯼ ﻋﺸﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺧﺸﻮﻧﺖ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﻣﺤﺒﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﻧﺎ ﺣﻖ ﻧﮕﻮ ﺍﮔﺮ ﮔﻔﺘﯽ ﺣﻖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍﯼ، ﺑﯽ ﺣﯿﺎﯾﯽ ﻧﮑﻦ ﺍﮔﺮ ﮐﺮﺩﯼ ﺷﺮﺍﻓﺖ ﺭﺍ ﺩﺯﺩﯾﺪﻩ ﺍی... ﭘﺲ ﺩﺭ ﺯﻧﺪﮔﯽ ﻓﻘﻂ ﺩﺯﺩﯼ نکن !</p>
       </div>
@@ -285,5 +286,10 @@
     </div>
   </div>
 
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
