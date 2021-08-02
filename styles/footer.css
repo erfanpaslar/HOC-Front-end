@@ -2,7 +2,7 @@
   --footerBg:#002339;
   --footerColor:#eee;
 }
-.footer{
+.hoc-footer-footer{
   z-index:10!important;
   background:var(--footerBg);
   color:var(--footerColor);
@@ -11,43 +11,41 @@
   overflow-x: hidden;
 }
 
-.textAndLogoContainer{
+.hoc-footer-textAndLogoContainer{
   display:flex;
   flex-direction:column;
   margin:5rem auto 1.5rem auto;
 }
-.footer-contact-box{
+.hoc-footer-footer-contact-box{
   display:flex;
 }
-.footer-text-container{
+.hoc-footer-footer-text-container{
   border-right: solid .15rem #fff;
   text-align: center;
-
-
 }
-.footer-p1{
+.hoc-footer-footer-p1{
   padding: 1rem;
   font-size:1.3rem
 }
-.footer-p2{
+.hoc-footer-footer-p2{
   padding: 1rem;
   font-size:.8rem
 }
-.footer-logos{
+.hoc-footer-footer-logos{
   display:flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.footerImage{
+.hoc-footer-footerImage{
   width:4rem;
   float:right;
   margin-left:.5rem;
   
 }
-.footer-contact-logos{
+.hoc-footer-footer-contact-logos{
   margin:2rem auto;
 }
-.contact-logo{
+.hoc-footer-contact-logo{
   width:2.25rem;
   margin:auto .75rem;
   vertical-align:middle;
@@ -55,67 +53,60 @@
   cursor:pointer;
 }
 
-.contact-logo:hover{
+.hoc-footer-contact-logo:hover{
   transform: scale(1.1);
   transition: transform .2s;
 }
-
-.contactLink{
+.hoc-footer-contactLink{
   color:#fff;
   text-decoration: none;
 }
-
-
-.map{
+.hoc-footer-map{
   margin:2rem 10%
 }
 
-.bottom-contact{
+.hoc-footer-bottom-contact{
   font-size:1.2rem;
   margin-bottom:3rem;
 }
-.poshtibani{
+.hoc-footer-poshtibani{
   font-size: 1.3rem;
   padding-bottom:.7rem;
   border-bottom: solid .15rem #fff;
   margin: auto 30% 1rem 30%;  
   text-align: center;
-
 }
-.phoneLogo{
+.hoc-footer-phoneLogo{
   cursor:pointer;
   width:1.7rem
 }
-.bottom-contact-p{
+.hoc-footer-bottom-contact-p{
   padding:.5rem;
   text-align: center;
   margin:0rem;
 }
-.theUpperContainer{
+.hoc-footer-theUpperContainer{
   display:flex;
   background: var(--footerBg);
   z-index: 2;
 }
 
 
-@media screen and (max-width: 1024px) {
-  
-}
 
 @media screen and (max-width: 768px) {
-  .theUpperContainer{
+  .hoc-footer-theUpperContainer{
     flex-direction:column-reverse;
   }
-  .map{
+  .hoc-footer-map{
     margin:2rem auto
   }
-  .poshtibani{
-  margin: auto 10% 1rem 10%;  
+  .hoc-footer-poshtibani{
+    margin: auto 10% 1rem 10%;  
   }
-  .footer-p1{
+  .hoc-footer-footer-p1{
     font-size:1rem
   }
-  .footer-p2{
+  .hoc-footer-footer-p2{
     font-size:.7rem
   }
 }
