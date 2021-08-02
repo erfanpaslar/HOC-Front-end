@@ -65,7 +65,10 @@
 .hocClub-title{
   color:var(--articleColor);
   font-size:1.1rem;
-  margin-bottom: .2rem;
+  margin-bottom: .5rem;
+} 
+.hocClub-text{
+  margin: 1.5rem auto;
 } 
 
 .hocClub-p{
