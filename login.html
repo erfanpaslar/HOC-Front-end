@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles/footer.css">
 
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v28.0.0/dist/font-face.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -44,16 +45,16 @@
 
   <div class="loginBottomImg"><img src="./images/Login/loginBottom.svg" alt=""></div>
   <div class="loginTopImg"><img src="./images/Login/loginTop.svg" alt=""></div>
-  <div class="loginFormWrapperWrapperWrapper">
-    <div class="loginFormWrapperWrapper">
+  <div class="loginFormWrapperWrapperWrapper" style="overflow-x:hidden">
+    <div class="loginFormWrapperWrapper" data-aos="fade-left">
       <div class="loginFormWrapper">
         <div class="loginForm" dir="rtl">
 
           <h1 class="loginForm-text" >ورود به حساب کاربری</h1>
-          <form method="post" action="">
+          <form method="post" action="" >
             <div class="form-row">
               <!-- <input type="text" required> -->
-              <input type="text" name="username-<?=$args['form_id']?>"  required>
+              <input type="text" name="username-<?=$args['form_id']?>"  required >
               <span><img class="placeholderIcon" src="./images/icons/user.svg" alt="">نام کاربری یا ایمیل</span>
             </div>
 
@@ -72,7 +73,7 @@
             
             <div class="form-row">
               <!-- <button type="submit">ورود</button> -->
-              <button type="submit" id="um-submit-btn" class="um-buttton">ورود</button>
+              <input type="submit" id="um-submit-btn" class="um-buttton" value="ورود"/>
             </div>
             <div class="form-row error">نام کاربری یا رمز عبور اشتباه است!</div>
             <div class="form-row wantSignUp">هنوز ثبت نام نکردید؟ <a class="signUpLink" href="#">ثبت نام</a></div>
@@ -89,12 +90,12 @@
   </div>
 
   <!-- ********************** -->
-  <div class="footer">
+  <div class="footer"  style="overflow-y:hidden">
     <div class="theUpperContainer">
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d5832.63025645966!2d52.51988106137905!3d29.629760291403244!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3fb213bc74dceebd%3A0xae84b25e83670a13!2z2K_Yp9mG2LTaqdiv2Ycg24wg2YXZh9mG2K_Ys9uMINuy2Iwg2K_Yp9mG2LTar9in2Ycg2LTbjNix2KfYsiwgRmFycyBQcm92aW5jZSwgU2hpcmF6LCBNb2xsYSBTYWRyYSBTdCwgSXJhbg!3m2!1d29.6285062!2d52.5185883!5e0!3m2!1sen!2s!4v1627674435390!5m2!1sen!2s" width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe  data-aos="fade-right" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d5832.63025645966!2d52.51988106137905!3d29.629760291403244!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3fb213bc74dceebd%3A0xae84b25e83670a13!2z2K_Yp9mG2LTaqdiv2Ycg24wg2YXZh9mG2K_Ys9uMINuy2Iwg2K_Yp9mG2LTar9in2Ycg2LTbjNix2KfYsiwgRmFycyBQcm92aW5jZSwgU2hpcmF6LCBNb2xsYSBTYWRyYSBTdCwgSXJhbg!3m2!1d29.6285062!2d52.5185883!5e0!3m2!1sen!2s!4v1627674435390!5m2!1sen!2s" width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      <div class="textAndLogoContainer">
+      <div class="textAndLogoContainer" data-aos="fade-left" style="overflow-x:hidden">
         <div class="footer-contact-box">
             <div class="footer-text-container" dir="rtl">
               <p class="footer-p1">مهندسی کامپیوتر دانشگاه شیراز</p>
@@ -111,15 +112,18 @@
           <a href="#"><img class="contact-logo twitterLogo" src="images/icons/twitter.svg" alt=""></a>
           <a href="#"><img class="contact-logo linkedinLogo" src="images/icons/linkedin.svg" alt=""></a>
         </div>
-        
       </div>
     </div>
-    <div class="bottom-contact">
+    <div class="bottom-contact" data-aos="fade-up">
       <p class="poshtibani">پشتیبانی</p>
       <p class="bottom-contact-p"><img class="contact-logo phoneLogo" src="images/icons/phone-call.svg" alt=""><a class="contactLink" href="tel:+9809365723124">09365723124</a></p>
       <p class="bottom-contact-p"><img class="contact-logo" src="images/icons/email.svg" alt=""><a class="contactLink" href="mailto:support@hocshiraz.ir">support@hocshiraz.ir</a></p>
     </div>
   </div>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

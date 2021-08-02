@@ -88,6 +88,9 @@
     width: 100%;
     background-image: none;
     justify-content: center;
+    border-width: .2rem;
+    border-style: solid;
+    border-color: var(--articleBorder);
   }
   .hocClub-rightSide{
     width:90%;

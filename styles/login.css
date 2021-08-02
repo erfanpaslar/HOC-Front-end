@@ -89,7 +89,7 @@ body{
 }
 .form-row > input,
 .form-row > textarea,
-.form-row > button {
+.form-row > input[type=submit] {
 	border-radius: 1rem;
 	padding: 1rem 1rem;
 	width: 100%;
@@ -99,7 +99,7 @@ body{
 }
 
 
-.form-row > button {
+.form-row > input[type=submit] {
 	width: 100%;
 	background: var(--btnBg);
 	border:none;
@@ -111,8 +111,8 @@ body{
 	cursor: pointer;
 	transition: background .5s;
 }
-.form-row > button:hover, 
-.form-row > button:focus{
+.form-row > input[type=submit]:hover, 
+.form-row > input[type=submit]:focus{
 	background: var(--btnBgHover);
 	transition: background .5s;
 }

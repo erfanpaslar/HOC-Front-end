@@ -10,7 +10,7 @@
   --btnBg:#0087C2;
   --btnBgHover:#28a5db;
   --btnColor:#fff;
-  --boxShadow:rgba(17, 17, 17, 0.103);
+  --boxShadow:rgba(0, 0, 0, 0.116);
   --articleBg:#F7FBFF;
   --articleLittleBg:#fff;
   --articleBorder:#363377;
@@ -28,6 +28,7 @@ body{
   font-size: 62.5%;
   font-family: "Vazir", sans-serif;
   overflow: overlay;
+  
 }
 
 .temp{

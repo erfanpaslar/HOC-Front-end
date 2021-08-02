@@ -75,6 +75,7 @@
   
 }
 .anotherFlex{
+  background: var(--navBg);
   display: flex;
   flex-direction: row;
   justify-content: center;
