@@ -18,6 +18,7 @@
 body{
 	background:var(--fieldBg)
 }
+.loginForm-inLogin,
 .loginForm{
 	display:flex;
 	flex-direction: column;
@@ -25,16 +26,17 @@ body{
 	width:100%;
 	
 }
+.loginForm-text-inLogin,
 .loginForm-text{
-	margin-top:2rem;
+	margin-top:2.5rem;
 	font-size:1.75rem;
 	font-weight:normal;
 	text-align:center;
 	font-family: "Vazir", sans-serif;
-
 }
 
 
+.form-row-inLogin,
 .form-row {
 	display: flex;
 	position: relative;
@@ -42,6 +44,7 @@ body{
 	margin:.3rem auto
 }
 
+.form-row-inLogin > span,
 .form-row > span {
 	background: var(--fieldPlaceHolderBg);
 	/* background: red; */
@@ -58,35 +61,45 @@ body{
 	font-size: .9rem;
 	border-radius: .5rem;
 }
+.checkBox-row-inLogin,
 .checkBox-row{
 	margin:auto;
 	width:80%;
 	vertical-align:middle
 }
+.checkBox-inLogin,
 .checkBox{
 	vertical-align:middle;
 
 }
+.forgot-inLogin,
 .forgot{
 	font-size: .8rem;
 	text-decoration: none;
 	text-align: left;
-	color:var(--linkColor);
+	color:var(--linkColor)!important;
 }
+.forgot-inLogin:hover,
 .forgot:hover{
-	color:var(--inputBorder)
+	color:var(--inputBorder)!important;
 }
+.forgotRow-inLogin,
 .forgotRow{
 	flex-direction: row-reverse;
 }
+.remember-inLogin,
 .remember{
 	font-size:1rem
 }
+.placeholderIcon-inLogin,
 .placeholderIcon{
 	width:1rem;
 	margin-left:.4rem ;
 	vertical-align:middle;
 }
+.form-row-inLogin > input,
+.form-row-inLogin > textarea,
+.form-row-inLogin > input[type=submit],
 .form-row > input,
 .form-row > textarea,
 .form-row > input[type=submit] {
@@ -96,9 +109,17 @@ body{
 	margin:.3rem auto;
 	font-size:.9rem;
 	font-family: "Vazir", sans-serif;
+	color:#000;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+	-webkit-box-shadow: 0 0 0 30px var(--fieldBg) inset !important;
+}
 
+.form-row-inLogin > input[type=submit],
 .form-row > input[type=submit] {
 	width: 100%;
 	background: var(--btnBg);
@@ -111,25 +132,33 @@ body{
 	cursor: pointer;
 	transition: background .5s;
 }
+.form-row-inLogin > input[type=submit]:hover, 
+.form-row-inLogin > input[type=submit]:focus,
 .form-row > input[type=submit]:hover, 
 .form-row > input[type=submit]:focus{
 	background: var(--btnBgHover);
 	transition: background .5s;
 }
-.wantSignUp{
+.wantSignUp,
+.wantSignUp-inLogin{
 	justify-content:center;
 	font-size: 1rem;
 	margin:2rem auto
+	
 }
 
-.signUpLink{
+.signUpLink,
+.signUpLink-inLogin{
 	margin:auto .5rem;
-	color:var(--linkColor);
+	color:var(--linkColor)!important;;
 	text-decoration: none;
 }
-.signUpLink:hover{
-	color:var(--inputBorder)
+.signUpLink:hover,
+.signUpLink-inLogin:hover{
+	color:var(--inputBorder)!important;
 }
+.form-row-inLogin > input,
+.form-row-inLogin > textarea,
 .form-row > input,
 .form-row > textarea {
 	transition: 50ms ease all;
@@ -137,6 +166,12 @@ body{
 	background: var(--fieldBg);
 }
 
+.form-row-inLogin > input[type=text], 
+.form-row-inLogin > textarea, 
+.form-row-inLogin > input[type=date], 
+.form-row-inLogin > input[type=number], 
+.form-row-inLogin > input[type=email], 
+.form-row-inLogin > input[type=password],
 .form-row > input[type=text], 
 .form-row > textarea, 
 .form-row > input[type=date], 
@@ -145,11 +180,13 @@ body{
 .form-row > input[type=password] {
 	border: 1.7px solid var(--inputBorder);
 }
+.datePicker-inLogin,
 .datePicker{
 	border: 1.7px solid var(--inputBorder)!important;
 }
 
-/* .form-row > input[type=date]{} */
+.form-row-inLogin > input:valid + span,
+.form-row-inLogin > textarea:valid + span,
 .form-row > input:valid + span,
 .form-row > textarea:valid + span {
 	top: -.4rem;
@@ -158,13 +195,20 @@ body{
 	transform: scale(.8);
 }
 
+
+.form-row-inLogin > input:invalid + span,
 .form-row > input:invalid + span{
 	top: 50%;
 }
+
+
+.form-row-inLogin > textarea:invalid + span,
 .form-row > textarea:invalid + span {
 	top: 1.5rem;
 }
-.form-row > input:focus + span,
+.form-row-inLogin > input:focus + span,
+.form-row-inLogin > textarea:focus + span,
+	.form-row > input:focus + span,
 .form-row > textarea:focus + span {
 	top: -.4rem;
 	right:.5rem;
@@ -172,11 +216,15 @@ body{
 	color:var(--borderOnFocused);
 }
 
+.form-row-inLogin > input:required,
+.form-row-inLogin > textarea:required,
 .form-row > input:required,
 .form-row > textarea:required {
 	box-shadow: none;
 }
 
+.form-row-inLogin > input:focus,
+.form-row-inLogin > textarea:focus,
 .form-row > input:focus,
 .form-row > textarea:focus {
 	border-color: var(--borderOnFocused);
@@ -184,36 +232,48 @@ body{
 	
 }
 
+.form-row-inLogin > input:focus:invalid,
+.form-row-inLogin > textarea:focus:invalid,
 .form-row > input:focus:invalid,
 .form-row > textarea:focus:invalid {
 	box-shadow: none;
 	top: 50%;
 }
 
+.form-row-inLogin > input:focus:valid
+.form-row-inLogin > textarea:focus:valid,
 .form-row > input:focus:valid
 .form-row > textarea:focus:valid {
 	top: 0;
 }
 
+.error-inLogin,
 .error{
 	margin-top:.5rem;
 	color:var(--error);
 	font-size: .8rem;
 }
 
+.loginBottomImg-inLogin,
 .loginBottomImg{
 	display: none;
 	z-index: 1;
 	overflow: overlay;
 }
+.loginTopImg-inLogin,
 .loginTopImg{
 	display: none;
 }
 
+.scroll_block-inLogin,
 .scroll_block{
   width: 0.7vw;
   height: 20vh;
 }
+
+.isWrong{
+	visibility: hidden;
+} 
 
 @media screen and (min-width: 850px) {
 	body{
@@ -222,6 +282,7 @@ body{
 		overflow:overlay;
 		overflow-x: hidden;
 	}
+	.loginFormWrapperWrapperWrapper-inLogin,
 	.loginFormWrapperWrapperWrapper{
 		width:100%;
 		height:90%;
@@ -235,16 +296,18 @@ body{
 
 	}
 
+	.loginFormWrapperWrapper-inLogin,
 	.loginFormWrapperWrapper{
 		max-width: 60rem;
 		width:80%;
 		height:80%;
 		min-height:30rem;
-
 		background:#fff;
 		border-radius: 1rem;
 		z-index: 2
 	}
+
+  .loginFormWrapper-inLogin,
   .loginFormWrapper{
 		display: flex;
 		flex-direction: row-reverse;
@@ -258,24 +321,61 @@ body{
 		/* background:blue */
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11), 0 6px 6px rgba(0, 0, 0, 0.11);
 	}
+	.loginForm-inLogin,
 	.loginForm{
 		background: transparent;
 		border-radius: 1rem;
 		width:45%
 	}
-	.wantSignUp{
+	.wantSignUp,
+	.wantSignUp-inLogin{
 		margin:1.5rem auto
 	}
+	.loginBottomImg-inLogin,
 	.loginBottomImg{
 		display:block;
 		position: absolute;
 		bottom:-10rem;
 		right:-10rem;
 	}
+	.loginTopImg-inLogin,
 	.loginTopImg{
 		display:block;
 		position: absolute;
 		top:-4rem;
 		left:-6.5rem;
 	}
+	.isWrong{
+		top: 1rem!important;
+	}
+	.form-row-inLogin *.isWrong{
+		top: 1.3rem!important;
+		/* width:2rem; */
+	}
+}
+
+.notValid input{
+	border-color:var(--error) !important;
+}.notValid textarea{
+	border-color:var(--error) !important;
+}
+.notValid span{
+	color:var(--error)!important
+}
+.isWrong{
+	font-style: normal;
+	position: absolute;
+	top: 1.3rem;
+	margin:0;
+	position: absolute;
+	left: .75rem;
+	width:1rem;
+}
+.notValid *.isWrong{
+	visibility: visible;
+}
+
+.form-row-inLogin *.isWrong{
+	/* top: 1.3rem; */
+	width:1.5rem;
 }

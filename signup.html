@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="hocIcon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/head.css">
-  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/login.css"><!-- for signup: first login.css, then signup.css -->
   <link rel="stylesheet" href="styles/signup.css">
   <link rel="stylesheet" href="styles/footer.css">
   
@@ -59,14 +59,16 @@
             <div class="myDivider" ><span>اطلاعات شخصی</span></div>
 
             <div class="inputsWrapper2">
-              <div class="form-row">
+              <div class="form-row notValid">
                 <input type="text" name="first_name-<?= $args['form_id'] ?>" required>
                 <span>نام</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
               
               <div class="form-row">
                 <input type="text" name="last_name-<?= $args['form_id'] ?>" required>
                 <span>نام خانوادگی</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
             </div>
             
@@ -74,11 +76,13 @@
               <div class="form-row">
                 <input type="email" name="user_email-<?= $args['form_id'] ?>" required>
                 <span>آدرس ایمیل</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
               
               <div class="form-row">
                 <input type="number" name="mobile_number-<?= $args['form_id'] ?>" value="" required>
                 <span>شماره تلفن همراه</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
             </div>
 
@@ -86,14 +90,17 @@
               <div class="form-row">
                 <input type="number" name="national_code-<?= $args['form_id'] ?>" required>
                 <span>کد ملی</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
               <div class="form-row">
                 <input id="jalaliDatePcker" class="datePicker" name="jalali_birthday-<?= $args['form_id'] ?>" required>
                 <span>تاریخ تولد</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
               <div class="form-row">
                 <input type="number" name="grade-<?= $args['form_id'] ?>" required>
                 <span>پایه ی تحصیلی</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
             </div>
               
@@ -103,14 +110,17 @@
               <div class="form-row">
                 <input type="number" name="phone_number-<?= $args['form_id'] ?>" required>
                 <span>شماره تلفن ثابت</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
               <div class="form-row">
                 <input type="number" name="parent_mobile_number-<?= $args['form_id'] ?>" required>
                 <span>شماره همراه ولی</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
               <div class="form-row">
                 <input type="number" name="post_code-<?= $args['form_id'] ?>" required>
                 <span>کد پستی</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
             </div>
             <div class="inputsWrapper1">
@@ -118,6 +128,7 @@
                 <!-- ! it's text area not input ! -->
                 <textarea name="home_address-<?= $args['form_id'] ?>"  cols="30" rows="3" required></textarea>
                 <span>نشانی خانه</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
             </div>
 
@@ -127,11 +138,13 @@
               <div class="form-row">
                 <input type="text" name="user_login-<?= $args['form_id'] ?>" required>
                 <span>نام کاربری</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
               
               <div class="form-row">
                 <input type="password" name="user_password-<?= $args['form_id'] ?>" required>
                 <span>رمز عبور</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
             </div>
             
@@ -139,14 +152,16 @@
               <div class="form-row">
                 <input type="password" name="confirm_user_password-<?= $args['form_id'] ?>" required>
                 <span>تایید رمز عبور</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
               
               <div class="form-row">
                 <input type="text" name="attend_code-<?= $args['form_id'] ?>">
                 <span>کد معرف</span>
+                <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
               </div>
             </div>
-            
+            <div class=""></div>
             <div class="form-row">
               <input id="um-submit-btn" class="um-button" type="submit" value="ثبت نام"/>
               <!-- <button id="um-submit-btn" class="um-button" type="submit">ثبت نام</button> -->
@@ -154,13 +169,15 @@
 
 
             <div class="form-row error">فرم را کامل پر کنید!</div>
-            <div class="form-row wantSignUp">قبلا ثبت نام کرده اید؟ <a class="signUpLink" href="#">ورود</a></div>
+
             
+            <div class="form-row wantSignUp"><p>قبلا ثبت نام کرده اید؟ </p><a class="signUpLink" href="login.html"> ورود به حساب کاربری</a></div>
             <!-- <input type="hidden" name="form_id" value="<?= $args['form_id'] ?>">
             <input type="hidden" name="um_request" size="25">
             <?php wp_nonce_field('um_register_form'); ?> -->
           </form>
         </div>
+        
       </div>
     </div>
   </div>

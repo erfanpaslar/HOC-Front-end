@@ -1,5 +1,5 @@
 
-.mainWrapper{
+.hocClub-mainWrapper{
   background-image: url("../images/mainPage/hocClubBg.jpg");
   background-size: cover;
   background-position: bottom;
@@ -8,7 +8,7 @@
   margin:0;
   display:flex;
 }
-.clubContainerWrapper{
+.hocClub-clubContainerWrapper{
   display:flex;
   margin:4rem 3rem 7rem;
   align-items: flex-start;
@@ -16,7 +16,7 @@
   width:100%;
 }
 
-.clubContainer{
+.hocClub-clubContainer{
   background:#fff;
   display: flex;
   flex-direction: row;
@@ -72,19 +72,19 @@
   margin-top:.2rem;
   font-size:.9rem
 }
-.centerIt{
+.hocClub-centerIt{
   margin:auto;
   text-align: center;
   font-weight:600;
 }
 
 @media screen and (max-width: 1050px) {
-  .clubContainer{
+  .hocClub-clubContainer{
     width: 95%;
   }
 }
 @media screen and (max-width: 768px) {
-  .clubContainer{
+  .hocClub-clubContainer{
     width: 100%;
     background-image: none;
     justify-content: center;
@@ -95,7 +95,7 @@
   .hocClub-rightSide{
     width:90%;
   }
-  .clubContainerWrapper{
+  .hocClub-clubContainerWrapper{
     margin:3rem 1rem;
   }
 }

@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/head.css">
   <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/signup.css">
+
   <link rel="stylesheet" href="styles/footer.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v28.0.0/dist/font-face.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
 
 </head>
 <body id="body">
@@ -43,40 +44,39 @@
   <div class="hoc-head-dummyTopBar" dir="rtl"></div>
   <!-- ******************************** -->
 
-  <div class="loginBottomImg"><img src="./images/Login/loginBottom.svg" alt=""></div>
-  <div class="loginTopImg"><img src="./images/Login/loginTop.svg" alt=""></div>
-  <div class="loginFormWrapperWrapperWrapper" style="overflow-x:hidden">
-    <div class="loginFormWrapperWrapper" data-aos="fade-left">
-      <div class="loginFormWrapper">
-        <div class="loginForm" dir="rtl">
+  <!-- <div class="loginBottomImg-inLogin"><img src="./images/Login/loginBottom.svg" alt=""></div>
+  <div class="loginTopImg-inLogin"><img src="./images/Login/loginTop.svg" alt=""></div> -->
+  <div class="loginFormWrapperWrapperWrapper-inLogin" style="overflow-x:hidden">
+    <div class="loginFormWrapperWrapper-inLogin" data-aos="fade-left">
+      <div class="loginFormWrapper-inLogin">
+        <div class="loginForm-inLogin" dir="rtl">
 
-          <h1 class="loginForm-text" >ورود به حساب کاربری</h1>
+          <h1 class="loginForm-text-inLogin" >ورود به حساب کاربری</h1>
           <form method="post" action="" >
-            <div class="form-row">
-              <!-- <input type="text" required> -->
-              <input type="text" name="username-<?=$args['form_id']?>"  required >
-              <span><img class="placeholderIcon" src="./images/icons/user.svg" alt="">نام کاربری یا ایمیل</span>
+            <div class="form-row-inLogin">
+              <input type="text" name="username-<?=$args['form_id']?>" required >
+              <span><img class="placeholderIcon-inLogin" src="./images/icons/user.svg" alt="">نام کاربری یا ایمیل</span>
+              <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
             </div>
 
-            <div class="form-row">
-              <!-- <input type="password" required> -->
+            <div class="form-row-inLogin notValid">
               <input type="password" name="uer_password-<?=$args['form_id']?>" required>
-              <span><img class="placeholderIcon" src="./images/icons/padlock.svg" alt="">رمز عبور</span>
+              <span><img class="placeholderIcon-inLogin" src="./images/icons/padlock.svg" alt="">رمز عبور</span>
+              <i class="isWrong"><img src="./images/Login/times.svg" alt=""></i>
             </div>
 
-            <div class="form-row forgotRow"><a class="forgot" href="resetPassword.html">رمز عبور خود را فراموش کردید؟</a></div>
+            <div class="form-row-inLogin forgotRow-inLogin"><a class="forgot-inLogin" href="resetPassword.html">رمز عبور خود را فراموش کردید؟</a></div>
             
-            <div class="checkBox-row remember">
-              <input class="checkBox" type="checkbox" name="remember" value="1">
+            <div class="checkBox-row-inLogin remember-inLogin">
+              <input class="checkBox-inLogin" type="checkbox" name="remember" value="1">
               <label>مرا به خاطر بسپار</label>
             </div>
             
-            <div class="form-row">
-              <!-- <button type="submit">ورود</button> -->
+            <div class="form-row-inLogin">
               <input type="submit" id="um-submit-btn" class="um-buttton" value="ورود"/>
             </div>
-            <div class="form-row error">نام کاربری یا رمز عبور اشتباه است!</div>
-            <div class="form-row wantSignUp">هنوز ثبت نام نکردید؟ <a class="signUpLink" href="signup.html">ثبت نام</a></div>
+            <div class="form-row-inLogin error-inLogin">نام کاربری یا رمز عبور اشتباه است!</div>
+            <div class="form-row-inLogin wantSignUp-inLogin">هنوز ثبت نام نکردید؟ <a class="signUpLink-inLogin" href="signup.html">ثبت نام</a></div>
           
             <!-- 
             <input type="hidden" name="form_id" value="<?=$args['form_id']?>">
