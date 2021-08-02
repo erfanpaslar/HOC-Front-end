@@ -1,8 +1,8 @@
-.dummyTopBar{
+.hoc-head-dummyTopBar{
   height:4rem;
   
 }
-.topBar{
+.hoc-head-topBar{
   z-index:100;
   width:100%;
   position: fixed;
@@ -13,7 +13,7 @@
   align-items:center;
   /* overflow:hidden; */
 }
-.topBar-ul{
+.hoc-head-topBar-ul{
   display: flex;
   height:4rem;
   background:var(--navBg);
@@ -21,7 +21,7 @@
   justify-content:center;
   overflow: hidden;
 }
-.topBar-item{
+.hoc-head-topBar-item{
   list-style: none;
   padding:.6rem 1rem;
   margin: auto .5rem;
@@ -37,25 +37,25 @@
 
 
 }
-.topBar-item-hover:hover{
+.hoc-head-topBar-item-hover:hover{
   background: var(--navHover);
   transition: background .5s;
   border-radius: .6rem;
 }
-.logoText,
-.logo{
+.hoc-head-logoText,
+.hoc-head-logo{
   text-align:center;
   vertical-align:middle;
   float:right
 }
-.logo{
+.hoc-head-logo{
   width:5rem;
   padding:.1rem .7rem;
   margin-left:1.5rem;
   margin-top: 0;
   padding-top: 0;
 }
-.logoText{
+.hoc-head-logoText{
   margin-right:1.25rem;
   margin-left:1.1rem;
   line-height: 1.2rem;
@@ -63,50 +63,50 @@
   text-align: right;
   padding-top:.5rem ;
 }
-.zang{
+.hoc-head-zang{
   font-size:1.5rem;
 
 }
-.clockImg{
+.hoc-head-clockImg{
   /* background-image: url("../images/Icons/alarm-clock.svg"); */
   width:1.7rem;
   margin:auto .4rem;
   vertical-align:middle;
   
 }
-.anotherFlex{
+.hoc-head-anotherFlex{
   background: var(--navBg);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.collapse ,
-.collapseContent{
+.hoc-head-collapse ,
+.hoc-head-collapseContent{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.collapseBtn{
+.hoc-head-collapseBtn{
   display:none;
   background:var(--navBg);
   cursor:pointer;
   transition:background .5s;
 }
-.collapseBtn:hover{
+.hoc-head-collapseBtn:hover{
   background:var(--navHover);
   transition:background .5s;
 }
 @media screen and (max-width: 768px) {
-  .topBar{
+  .hoc-head-topBar{
     display: block;
   }
-  .anotherFlex{
+  .hoc-head-anotherFlex{
     flex-direction: row-reverse;
     justify-content:space-between;
     align-items: flex-start;
   }
-  .collapseBtn{
+  .hoc-head-collapseBtn{
     display: block;
     border:none;
     outline:none;
@@ -118,7 +118,7 @@
     margin-top: .5rem;
     border-radius: .6rem;
   }
-  .collapseLine{
+  .hoc-head-collapseLine{
     color:transparent;
     user-select: none;
     display: block;
@@ -129,7 +129,7 @@
     width:30px;
     line-height: 0px;
   }
-  .fadeLineIn{
+  .hoc-head-fadeLineIn{
     animation-name: fadeLineTopIn;
     animation-duration:.5s;
   }
@@ -143,7 +143,7 @@
     border-top: solid 2px #fff;
     }
   }
-  .fadeLine{
+  .hoc-head-fadeLine{
     border-bottom: solid 2px #fff0;
     border-top: solid 2px #fff0;
     animation-name: fadeLineTop;
@@ -162,11 +162,11 @@
   }
 
   
-  .menuIcon{
+  .hoc-head-menuIcon{
     max-width:1.5rem;
     margin-top:3px
   }
-  .collapseContent{
+  .hoc-head-collapseContent{
     background: var(--navBg);
     display:block;
     position: fixed;
@@ -177,7 +177,7 @@
     padding:0rem;
     /* border-radius:0 0 .5rem .5rem; */
   }
-  .collapseHideFirst{
+  .hoc-head-collapseHideFirst{
     top:-20rem;
   }
   /*  */
@@ -185,12 +185,12 @@
   
   /*  */
 
-  .collapseHide{
+  .hoc-head-collapseHide{
     top:-20rem;
     animation-name: collapseHideAnimation;
     animation-duration: 1s;
   }
-  .collapseShow{
+  .hoc-head-collapseShow{
     top:4rem;
     animation-name: collapseAnimation;
     animation-duration: 1s;
@@ -214,15 +214,15 @@
       color:var(--navColor);
     }
   }
-  .logo{
+  .hoc-head-logo{
     display:none
   }
-  .topBar-item-hover{
+  .hoc-head-topBar-item-hover{
     margin:.5rem;
     display: block;
     /* display:none */
   }
-  .logoText{
+  .hoc-head-logoText{
     margin-left:0rem;
   }
 }

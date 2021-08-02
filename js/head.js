@@ -4,17 +4,17 @@ const collapseBottomLine =document.getElementById("bottomLine")
 
 const collapseToggle = () => {
   // collapseContent.classList.toggle("collapseHide");
-  if (collapseContent.classList.contains("collapseHideFirst")) {
-    collapseContent.classList.remove("collapseHideFirst");
-    collapseBottomLine.classList.toggle("fadeLineIn");
-    collapseTopLine.classList.toggle("fadeLineIn");
+  if (collapseContent.classList.contains("hoc-head-collapseHideFirst")) {
+    collapseContent.classList.remove("hoc-head-collapseHideFirst");
+    collapseBottomLine.classList.toggle("hoc-head-fadeLineIn");
+    collapseTopLine.classList.toggle("hoc-head-fadeLineIn");
   } else {
-    collapseContent.classList.toggle("collapseHide");
+    collapseContent.classList.toggle("hoc-head-collapseHide");
     
   }
-  collapseTopLine.classList.toggle("fadeLine");
-  collapseBottomLine.classList.toggle("fadeLine");
-  collapseTopLine.classList.toggle("fadeLineIn");
-  collapseBottomLine.classList.toggle("fadeLineIn");
-  collapseContent.classList.toggle("collapseShow");
+  collapseTopLine.classList.toggle("hoc-head-fadeLine");
+  collapseBottomLine.classList.toggle("hoc-head-fadeLine");
+  collapseTopLine.classList.toggle("hoc-head-fadeLineIn");
+  collapseBottomLine.classList.toggle("hoc-head-fadeLineIn");
+  collapseContent.classList.toggle("hoc-head-collapseShow");
 } 

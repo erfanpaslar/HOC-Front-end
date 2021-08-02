@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 :root{
-  font-family: "Vazir", sans-serif;
+  font-family: "Vazir", sans-serif!important;
   --bg:#DFDEE7;
   --titleColor:#fff;
   --btnBg:#0087C2;
@@ -26,11 +26,17 @@ body{
   margin: 0;
   background:var(--bg);
   font-size: 62.5%;
-  font-family: "Vazir", sans-serif;
+  font-family: "Vazir", sans-serif!important;
   overflow: overlay;
   
 }
+a{
+  color:var(--titleColor)!important;
 
+}
+a:hover{
+  color:var(--titleColor)!important;
+}
 .temp{
   height:200vh;
 }
