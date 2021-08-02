@@ -58,7 +58,7 @@
   border:none;
   outline:none;
   background:var(--btnBg);
-  color:var(--btnColor);
+  color:var(--btnColor)!important;
   width:12rem;
   font-size: 1rem;
   height:3rem;
@@ -71,7 +71,7 @@
   text-decoration: none;
 }
 .hoc-body-buttons:hover{
-  background-color: var(--btnBgHover);
+  background-color: var(--btnBgHover)!important;
   transition: background .5s;
 }
 .hoc-body-nowSignupBtn{
