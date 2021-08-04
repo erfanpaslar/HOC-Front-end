@@ -1175,6 +1175,7 @@ a:active{
 }
 
 /* login */
+
 *,
 *:before,
 *:after {
@@ -1278,6 +1279,7 @@ body{
 .form-row-inLogin > textarea,
 .form-row-inLogin > input[type=submit],
 .form-row > input,
+.form-row > select,
 .form-row > textarea,
 .form-row > input[type=submit] {
 	border-radius: 1rem;
@@ -1285,6 +1287,16 @@ body{
 	width: 100%;
 	margin:.3rem auto;
 	font-size:.9rem;
+	font-family: "Vazir", sans-serif;
+	color:#000;
+}
+.form-row > select{
+	outline:none;
+	border-radius: .5rem;
+	padding: .4rem 1rem;
+	width: 100%;
+	margin:.3rem auto;
+	font-size:.8rem;
 	font-family: "Vazir", sans-serif;
 	color:#000;
 }
@@ -1302,8 +1314,8 @@ input:-webkit-autofill:active{
 	background: var(--btnBg);
 	border:none;
 	outline:none;
-	font-size: 1.4rem;
-	padding: .7rem 2rem;
+	font-size: 1rem;
+	padding: 1rem 2rem!important;
 	color:var(--btnColor);
 	font-family: "Vazir", sans-serif;
 	cursor: pointer;
@@ -1336,6 +1348,7 @@ input:-webkit-autofill:active{
 }
 .form-row-inLogin > input,
 .form-row-inLogin > textarea,
+.form-row > select,
 .form-row > input,
 .form-row > textarea {
 	transition: 50ms ease all;
@@ -1350,6 +1363,7 @@ input:-webkit-autofill:active{
 .form-row-inLogin > input[type=email], 
 .form-row-inLogin > input[type=password],
 .form-row > input[type=text], 
+.form-row > select, 
 .form-row > textarea, 
 .form-row > input[type=date], 
 .form-row > input[type=number], 
@@ -1364,6 +1378,7 @@ input:-webkit-autofill:active{
 
 .form-row-inLogin > input:valid + span,
 .form-row-inLogin > textarea:valid + span,
+.form-row > select:valid + span,
 .form-row > input:valid + span,
 .form-row > textarea:valid + span {
 	top: -.4rem;
@@ -1374,6 +1389,7 @@ input:-webkit-autofill:active{
 
 
 .form-row-inLogin > input:invalid + span,
+.form-row > select:invalid + span,
 .form-row > input:invalid + span{
 	top: 50%;
 }
@@ -1385,7 +1401,8 @@ input:-webkit-autofill:active{
 }
 .form-row-inLogin > input:focus + span,
 .form-row-inLogin > textarea:focus + span,
-	.form-row > input:focus + span,
+.form-row > select:focus + span,
+.form-row > input:focus + span,
 .form-row > textarea:focus + span {
 	top: -.4rem;
 	right:.5rem;
@@ -1470,8 +1487,9 @@ input:-webkit-autofill:active{
 		/* border-radius: 1rem 1rem 1rem 0; */
 		/* background:red */
 		background:var(--bg);
-
 	}
+
+	
 
 	.loginFormWrapperWrapper-inLogin,
 	.loginFormWrapperWrapper{
@@ -1535,9 +1553,16 @@ input:-webkit-autofill:active{
 	border-color:var(--error) !important;
 }.notValid textarea{
 	border-color:var(--error) !important;
+}.notValid select{
+	border-color:var(--error) !important;
 }
 .notValid span{
 	color:var(--error)!important
+}
+.notValid select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
 }
 .isWrong{
 	font-style: normal;
@@ -1559,6 +1584,7 @@ input:-webkit-autofill:active{
 
 
 /* signup */
+
 .signupTxt{
 	margin-bottom: 0;
 }
@@ -1599,11 +1625,11 @@ input[type=number]::-webkit-outer-spin-button {
 .form-row > textarea,
 .form-row > input[type=submit] {
 	border-radius: .5rem;
-	padding: 1.5em 1rem;
+	padding: .8rem 1rem;
 }
 .form-row > input[type=submit] {
   border-radius: 1rem;
-	padding: .5rem 2rem;
+	padding: 1rem 2rem;
   font-size:1rem;
   margin-top:2rem
 }
@@ -1656,6 +1682,7 @@ input[type=number]::-webkit-outer-spin-button {
   .form-row > textarea:valid + span {
     font-size: .8rem;
   }
+ 
   
   .loginFormWrapperWrapperWrapper{
 		width:100%;
@@ -1749,6 +1776,10 @@ input[type=number]::-webkit-outer-spin-button {
   .myDivider{
     margin: 2.75rem auto 1.5rem;
   }
+
+  .form-row > select{
+		padding:0rem 1rem;
+	}
 }
 
 @media screen and (min-width: 1080px) {
@@ -1789,6 +1820,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
   }
 }
+
 /* fof */
 body{
   overflow-x: hidden!important;

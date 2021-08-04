@@ -38,11 +38,11 @@ input[type=number]::-webkit-outer-spin-button {
 .form-row > textarea,
 .form-row > input[type=submit] {
 	border-radius: .5rem;
-	padding: 1.5em 1rem;
+	padding: .8rem 1rem;
 }
 .form-row > input[type=submit] {
   border-radius: 1rem;
-	padding: .5rem 2rem;
+	padding: 1rem 2rem;
   font-size:1rem;
   margin-top:2rem
 }
@@ -95,6 +95,7 @@ input[type=number]::-webkit-outer-spin-button {
   .form-row > textarea:valid + span {
     font-size: .8rem;
   }
+ 
   
   .loginFormWrapperWrapperWrapper{
 		width:100%;
@@ -188,6 +189,10 @@ input[type=number]::-webkit-outer-spin-button {
   .myDivider{
     margin: 2.75rem auto 1.5rem;
   }
+
+  .form-row > select{
+		padding:0rem 1rem;
+	}
 }
 
 @media screen and (min-width: 1080px) {
