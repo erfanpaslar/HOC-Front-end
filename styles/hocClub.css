@@ -1,104 +1,102 @@
-
-.hocClub-mainWrapper{
+.hocClub-mainWrapper {
   background-image: url("../images/mainPage/hocClubBg.jpg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin:0;
-  display:flex;
+  margin: 0;
+  display: flex;
 }
-.hocClub-clubContainerWrapper{
-  display:flex;
-  margin:4rem 3rem 7rem;
+.hocClub-clubContainerWrapper {
+  display: flex;
+  margin: 4rem 3rem 7rem;
   align-items: flex-start;
   justify-content: center;
-  width:100%;
+  width: 100%;
 }
 
-.hocClub-clubContainer{
-  background:#fff;
+.hocClub-clubContainer {
+  background: #fff;
   display: flex;
   flex-direction: row;
   background-image: url("../images/Login/hocClubImage.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position:left;
+  background-position: left;
   align-items: center;
   justify-content: right;
   width: 80%;
   border-radius: 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11), 0 6px 6px rgba(0, 0, 0, 0.11);
-
 }
-.hocClub-rightSide{
+.hocClub-rightSide {
   flex-direction: column;
-  width:50%;
-  margin:2rem 10%;
+  width: 50%;
+  margin: 2rem 10%;
 }
-.hocClub-likeBtn{
-  display:flex;
+.hocClub-likeBtn {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background:#00A7A1;
-  color:#fff;
+  background: #00a7a1;
+  color: #fff;
   margin: auto;
-  width:90%;
-  height:4.5rem;
-  font-size:2.2rem;
-  border-radius: .7rem;
+  width: 90%;
+  height: 4.5rem;
+  font-size: 2.2rem;
+  border-radius: 0.7rem;
   margin-bottom: 1.5rem;
 }
 
-.hocClub-mainTitle{
-  margin:auto;
+.hocClub-mainTitle {
+  margin: auto;
   font-weight: normal;
   text-align: center;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   margin-bottom: 1.6rem;
 }
 
-.hocClub-p1{
-  font-size:1rem
+.hocClub-p1 {
+  font-size: 1rem;
 }
 
-.hocClub-title{
-  color:var(--articleColor);
-  font-size:1.1rem;
-  margin-bottom: .5rem;
-} 
-.hocClub-text{
+.hocClub-title {
+  color: var(--articleColor);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.hocClub-text {
   margin: 1.5rem auto;
-} 
-
-.hocClub-p{
-  margin-top:.2rem;
-  font-size:.9rem
 }
-.hocClub-centerIt{
-  margin:auto;
+
+.hocClub-p {
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+.hocClub-centerIt {
+  margin: auto;
   text-align: center;
-  font-weight:600;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1050px) {
-  .hocClub-clubContainer{
+  .hocClub-clubContainer {
     width: 95%;
   }
 }
 @media screen and (max-width: 768px) {
-  .hocClub-clubContainer{
+  .hocClub-clubContainer {
     width: 100%;
     background-image: none;
     justify-content: center;
-    border-width: .2rem;
+    border-width: 0.2rem;
     border-style: solid;
     border-color: var(--articleBorder);
   }
-  .hocClub-rightSide{
-    width:90%;
+  .hocClub-rightSide {
+    width: 90%;
   }
-  .hocClub-clubContainerWrapper{
-    margin:3rem 1rem;
+  .hocClub-clubContainerWrapper {
+    margin: 3rem 1rem;
   }
 }

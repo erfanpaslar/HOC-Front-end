@@ -1,228 +1,221 @@
-.hoc-head-dummyTopBar{
-  height:4rem;
-  
+.hoc-head-dummyTopBar {
+  height: 4rem;
 }
-.hoc-head-topBar{
-  z-index:100;
-  width:100%;
+.hoc-head-topBar {
+  z-index: 100;
+  width: 100%;
   position: fixed;
-  display:flex;
-  height:4rem;
-  background:var(--navBg);
-  justify-content:space-between;
-  align-items:center;
+  display: flex;
+  height: 4rem;
+  background: var(--navBg);
+  justify-content: space-between;
+  align-items: center;
   /* overflow:hidden; */
 }
-.hoc-head-topBar-ul{
+.hoc-head-topBar-ul {
   display: flex;
-  height:4rem;
-  background:var(--navBg);
-  align-items:center;
-  justify-content:center;
+  height: 4rem;
+  background: var(--navBg);
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
-.hoc-head-topBar-item{
+.hoc-head-topBar-item {
   list-style: none;
-  padding:.6rem 1rem;
-  margin: auto .5rem;
+  padding: 0.6rem 1rem;
+  margin: auto 0.5rem;
   text-align: center;
   font-size: 1rem;
   vertical-align: middle;
   text-decoration: none;
   /* background-color:red */
-  color:var(--navColor)!important;
+  color: var(--navColor) !important;
   cursor: pointer;
-  transition: background .5s;
-  border-radius: .5rem;
-
-
+  transition: background 0.5s;
+  border-radius: 0.5rem;
 }
-.hoc-head-topBar-item-hover:hover{
-  background: var(--navHover)!important;
-  transition: background .5s;
-  border-radius: .6rem;
+.hoc-head-topBar-item-hover:hover {
+  background: var(--navHover) !important;
+  transition: background 0.5s;
+  border-radius: 0.6rem;
 }
 .hoc-head-logoText,
-.hoc-head-logo{
-  text-align:center;
-  vertical-align:middle;
-  float:right
+.hoc-head-logo {
+  text-align: center;
+  vertical-align: middle;
+  float: right;
 }
-.hoc-head-logo{
-  width:5rem;
-  padding:.1rem .7rem;
-  margin-left:1.5rem;
+.hoc-head-logo {
+  width: 5rem;
+  padding: 0.1rem 0.7rem;
+  margin-left: 1.5rem;
   margin-top: 0;
   padding-top: 0;
 }
-.hoc-head-logoText{
-  margin-right:1.25rem;
-  margin-left:1.1rem;
+.hoc-head-logoText {
+  margin-right: 1.25rem;
+  margin-left: 1.1rem;
   line-height: 1.2rem;
-  font-size:1.3rem;
+  font-size: 1.3rem;
   text-align: right;
-  padding-top:.5rem ;
+  padding-top: 0.5rem;
 }
-.hoc-head-zang{
-  font-size:1.5rem;
-
+.hoc-head-zang {
+  font-size: 1.5rem;
 }
-.hoc-head-clockImg{
+.hoc-head-clockImg {
   /* background-image: url("../images/Icons/alarm-clock.svg"); */
-  width:1.7rem;
-  margin:auto .4rem;
-  vertical-align:middle;
-  
+  width: 1.7rem;
+  margin: auto 0.4rem;
+  vertical-align: middle;
 }
-.hoc-head-anotherFlex{
+.hoc-head-anotherFlex {
   background: var(--navBg);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.hoc-head-collapse ,
-.hoc-head-collapseContent{
+.hoc-head-collapse,
+.hoc-head-collapseContent {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.hoc-head-collapseBtn{
-  display:none;
-  background:var(--navBg);
-  cursor:pointer;
-  transition:background .5s;
+.hoc-head-collapseBtn {
+  display: none;
+  background: var(--navBg);
+  cursor: pointer;
+  transition: background 0.5s;
 }
-.hoc-head-collapseBtn:hover{
-  background:var(--navHover);
-  transition:background .5s;
+.hoc-head-collapseBtn:hover {
+  background: var(--navHover);
+  transition: background 0.5s;
 }
 @media screen and (max-width: 768px) {
-  .hoc-head-topBar{
+  .hoc-head-topBar {
     display: block;
   }
-  .hoc-head-anotherFlex{
+  .hoc-head-anotherFlex {
     flex-direction: row-reverse;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: flex-start;
   }
-  .hoc-head-collapseBtn{
+  .hoc-head-collapseBtn {
     display: block;
-    border:none;
-    outline:none;
+    border: none;
+    outline: none;
     text-align: center;
-    padding:.5rem .75rem ;
+    padding: 0.5rem 0.75rem;
     min-height: 3rem;
     min-width: 4rem;
     margin-right: 1rem;
-    margin-top: .5rem;
-    border-radius: .6rem;
+    margin-top: 0.5rem;
+    border-radius: 0.6rem;
   }
-  .hoc-head-collapseLine{
-    color:transparent;
+  .hoc-head-collapseLine {
+    color: transparent;
     user-select: none;
     display: block;
     border-bottom: solid 2px #fff;
     border-top: solid 2px #fff;
-    margin:5px;
+    margin: 5px;
     border-radius: 2px;
-    width:30px;
+    width: 30px;
     line-height: 0px;
   }
-  .hoc-head-fadeLineIn{
+  .hoc-head-fadeLineIn {
     animation-name: fadeLineTopIn;
-    animation-duration:.5s;
+    animation-duration: 0.5s;
   }
-  @keyframes fadeLineTopIn{
-    from{
+  @keyframes fadeLineTopIn {
+    from {
       border-bottom: solid 2px #fff0;
-    border-top: solid 2px #fff0;
+      border-top: solid 2px #fff0;
     }
-    to{
+    to {
       border-bottom: solid 2px #fff;
-    border-top: solid 2px #fff;
+      border-top: solid 2px #fff;
     }
   }
-  .hoc-head-fadeLine{
+  .hoc-head-fadeLine {
     border-bottom: solid 2px #fff0;
     border-top: solid 2px #fff0;
     animation-name: fadeLineTop;
-    animation-duration:.5s;
+    animation-duration: 0.5s;
     /* display:none; */
   }
-  @keyframes fadeLineTop{
-    from{
+  @keyframes fadeLineTop {
+    from {
       border-bottom: solid 2px #fff;
-    border-top: solid 2px #fff;
+      border-top: solid 2px #fff;
     }
-    to{
+    to {
       border-bottom: solid 2px #fff0;
-    border-top: solid 2px #fff0;
+      border-top: solid 2px #fff0;
     }
   }
 
-  
-  .hoc-head-menuIcon{
-    max-width:1.5rem;
-    margin-top:3px
+  .hoc-head-menuIcon {
+    max-width: 1.5rem;
+    margin-top: 3px;
   }
-  .hoc-head-collapseContent{
+  .hoc-head-collapseContent {
     background: var(--navBg);
-    display:block;
+    display: block;
     position: fixed;
-    z-index: -10!important;
-    left:0;
-    top:4rem;
-    width:100%;
-    padding:0rem;
+    z-index: -10 !important;
+    left: 0;
+    top: 4rem;
+    width: 100%;
+    padding: 0rem;
     /* border-radius:0 0 .5rem .5rem; */
   }
-  .hoc-head-collapseHideFirst{
-    top:-20rem;
+  .hoc-head-collapseHideFirst {
+    top: -20rem;
   }
   /*  */
 
-  
   /*  */
 
-  .hoc-head-collapseHide{
-    top:-20rem;
+  .hoc-head-collapseHide {
+    top: -20rem;
     animation-name: collapseHideAnimation;
     animation-duration: 1s;
   }
-  .hoc-head-collapseShow{
-    top:4rem;
+  .hoc-head-collapseShow {
+    top: 4rem;
     animation-name: collapseAnimation;
     animation-duration: 1s;
   }
-  @keyframes collapseHideAnimation{
-    from{
-      top:4rem;
+  @keyframes collapseHideAnimation {
+    from {
+      top: 4rem;
     }
-    to{
+    to {
       color: var(--navBg);
-      top:-20rem;
+      top: -20rem;
     }
   }
-  @keyframes collapseAnimation{
-    from{
-      top:-20rem;
+  @keyframes collapseAnimation {
+    from {
+      top: -20rem;
       color: var(--navBg);
     }
-    to{
-      top:4rem;
-      color:var(--navColor);
+    to {
+      top: 4rem;
+      color: var(--navColor);
     }
   }
-  .hoc-head-logo{
-    display:none
+  .hoc-head-logo {
+    display: none;
   }
-  .hoc-head-topBar-item-hover{
-    margin:.5rem;
+  .hoc-head-topBar-item-hover {
+    margin: 0.5rem;
     display: block;
     /* display:none */
   }
-  .hoc-head-logoText{
-    margin-left:0rem;
+  .hoc-head-logoText {
+    margin-left: 0rem;
   }
 }

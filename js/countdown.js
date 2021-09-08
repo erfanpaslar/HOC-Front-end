@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
 	const elSeconds = document.querySelector(".hoc-countdown-seconds");
 
 	
-	const date1 = new Date();
+	const date1 = new Date("2021-09-01");
 	const date2 = new Date("2021-09-02");
 	const diffTime = Math.abs(date2 - date1);
 	const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));

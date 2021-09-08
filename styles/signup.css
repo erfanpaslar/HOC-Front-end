@@ -1,208 +1,202 @@
-.signupTxt{
-	margin-bottom: 0;
+.signupTxt {
+  margin-bottom: 0;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-	display:none
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
 }
 .form-row > textarea {
-	min-width:100%;
-	min-height:5rem;
-	
-	font-family: "Vazir", sans-serif;
+  min-width: 100%;
+  min-height: 5rem;
+
+  font-family: "Vazir", sans-serif;
 }
 
-.myDivider{
-	margin: 3rem auto 2rem;
-	border-top:solid var(--myDividerBorder) 2px;
-	width:80%;
-	text-align: center;
-	font-size:1rem;
-	position: relative;
+.myDivider {
+  margin: 3rem auto 2rem;
+  border-top: solid var(--myDividerBorder) 2px;
+  width: 80%;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
 }
-.myDivider > span{
-	position:absolute;	
-	background: var(--fieldBg);
-	padding:.7rem;
-	top:-1.5rem;
-	left:50%;
-	transform: translate(-50%,0);
+.myDivider > span {
+  position: absolute;
+  background: var(--fieldBg);
+  padding: 0.7rem;
+  top: -1.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-.required{
-	color:var(--error);
-	
+.required {
+  color: var(--error);
 }
 
 .form-row > input,
 .form-row > textarea,
-.form-row > input[type=submit] {
-	border-radius: .5rem;
-	padding: .8rem 1rem;
+.form-row > input[type="submit"] {
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
 }
-.form-row > input[type=submit] {
+.form-row > input[type="submit"] {
   border-radius: 1rem;
-	padding: 1rem 2rem;
-  font-size:1rem;
-  margin-top:2rem
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-top: 2rem;
 }
 
-.form-row > input{
-	line-height:0;
+.form-row > input {
+  line-height: 0;
 }
-
-
 
 @media screen and (min-width: 850px) {
-  .signupTxt{
+  .signupTxt {
     margin-top: 1.4rem;
   }
-  .wantSignUp{
+  .wantSignUp {
     margin-top: 1rem auto;
   }
-  .form-row > input[type=submit] {
-    margin-top:1rem
+  .form-row > input[type="submit"] {
+    margin-top: 1rem;
   }
   /*  */
   .form-row > span {
     right: 1em;
-    padding: 0 .7rem 0 .5rem;
+    padding: 0 0.7rem 0 0.5rem;
     position: absolute;
     pointer-events: none;
     transform: translatey(-50%);
     top: 50%;
     transition: all 200ms ease;
     user-select: none;
-    font-size: .8rem;
-    border-radius: .5rem;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
   }
   /*  */
 
-	body{
-		background:var(--bg);
-    overflow:overlay;
-    
-	}
-	.form-row > input,
+  body {
+    background: var(--bg);
+    overflow: overlay;
+  }
+  .form-row > input,
   .form-row > textarea,
-  .form-row > input[type=submit] {
-    border-radius: .5rem;
-    padding: .45em 1rem;
-    font-size: .8rem;
+  .form-row > input[type="submit"] {
+    border-radius: 0.5rem;
+    padding: 0.45em 1rem;
+    font-size: 0.8rem;
   }
 
   .form-row > input:valid + span,
   .form-row > textarea:valid + span {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
- 
-  
-  .loginFormWrapperWrapperWrapper{
-		width:100%;
-    height:60rem;
-		overflow:overlay;
-		display:flex;
-		align-items:flex-start;
-    margin-top:3rem;
-		background:var(--bg);
-    
-	}
 
-	.loginFormWrapperWrapper{
-		width:80%;
-		height:90%;
-		min-height:30rem;
-		background:#fff;
-		border-radius: 1rem;
-		z-index: 2
-	}
+  .loginFormWrapperWrapperWrapper {
+    width: 100%;
+    height: 60rem;
+    overflow: overlay;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3rem;
+    background: var(--bg);
+  }
 
-  .loginFormWrapper{
-		display: flex;
-		flex-direction: row;
-		width:100%;
-		height:100%;
-    background:#fff;
-		background-position:right ;
-		background-size: contain;
-		border-radius: 1rem;
-		background-repeat: no-repeat;
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11), 0 6px 6px rgba(102, 86, 86, 0.11);
-	}
-	.loginForm{
-		background: transparent;
-		border-radius: 1rem;
-		width:100%
-	}
-	.loginBottomImg{
-		display:block;
-		position: absolute;
-		bottom:-10rem;
-		right:-10rem;
-	}
-	.loginTopImg{
-		display:block;
-		position: absolute;
-		top:-4rem;
-		left:-6.5rem;
-	}
+  .loginFormWrapperWrapper {
+    width: 80%;
+    height: 90%;
+    min-height: 30rem;
+    background: #fff;
+    border-radius: 1rem;
+    z-index: 2;
+  }
+
+  .loginFormWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-position: right;
+    background-size: contain;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11),
+      0 6px 6px rgba(102, 86, 86, 0.11);
+  }
+  .loginForm {
+    background: transparent;
+    border-radius: 1rem;
+    width: 100%;
+  }
+  .loginBottomImg {
+    display: block;
+    position: absolute;
+    bottom: -10rem;
+    right: -10rem;
+  }
+  .loginTopImg {
+    display: block;
+    position: absolute;
+    top: -4rem;
+    left: -6.5rem;
+  }
   /*  */
 
-  .inputsWrapper2{
+  .inputsWrapper2 {
     display: flex;
     flex-direction: row;
-    padding:0;
-    justify-content:center;
+    padding: 0;
+    justify-content: center;
   }
   .inputsWrapper2 .form-row {
-    width:40%;
-    margin:.1rem 1%
-  }  
-  .inputsWrapper3{
+    width: 40%;
+    margin: 0.1rem 1%;
+  }
+  .inputsWrapper3 {
     display: flex;
     flex-direction: row;
-    padding:0;
-    justify-content:center;
-    
+    padding: 0;
+    justify-content: center;
   }
   .inputsWrapper3 .form-row {
-    width:26%;
-    margin:.1rem 1%;
-  }
-  
-  .inputsWrapper1{
-    display: flex;
-    flex-direction: row;
-    padding:0;
-    justify-content:center;
-  }
-  
-  .inputsWrapper1 .form-row {
-    width:82%;
-  }
-  .form-row > input[type=submit]{
-    width:12rem;
-    font-size:.9rem;
-    border-radius:.9rem
+    width: 26%;
+    margin: 0.1rem 1%;
   }
 
-  .myDivider{
+  .inputsWrapper1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .inputsWrapper1 .form-row {
+    width: 82%;
+  }
+  .form-row > input[type="submit"] {
+    width: 12rem;
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+  }
+
+  .myDivider {
     margin: 2.75rem auto 1.5rem;
   }
 
-  .form-row > select{
-		padding:0rem 1rem;
-	}
+  .form-row > select {
+    padding: 0rem 1rem;
+  }
 }
 
 @media screen and (min-width: 1080px) {
-  .loginFormWrapper{
+  .loginFormWrapper {
     background-image: url("../images/Login/signupImage.svg");
   }
-  .loginForm{
-		width:75%
-	}
-  .wantSignUp{
+  .loginForm {
+    width: 75%;
+  }
+  .wantSignUp {
     position: absolute;
     flex-direction: column;
     top: 1rem;
@@ -210,26 +204,26 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     justify-content: center;
     width: 15rem;
-    
   }
-  .wantSignUp p{
-    margin:auto;
-    display:block
+  .wantSignUp p {
+    margin: auto;
+    display: block;
   }
-  .signUpLink{
-    margin:3rem auto;
-    text-align:center;
-    display:block;
-    background:var(--btnBg);
-    color: #fff!important;;
-    padding:.5rem 1rem;
+  .signUpLink {
+    margin: 3rem auto;
+    text-align: center;
+    display: block;
+    background: var(--btnBg);
+    color: #fff !important;
+    padding: 0.5rem 1rem;
     border-radius: 1rem;
     /* width:3rem; */
-  }.signUpLink:hover{
-    background:var(--btnBgHover);
-    color: #fff!important;;
   }
-  .loginFormWrapper{
+  .signUpLink:hover {
+    background: var(--btnBgHover);
+    color: #fff !important;
+  }
+  .loginFormWrapper {
     position: relative;
   }
 }

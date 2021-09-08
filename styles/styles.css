@@ -1,37 +1,36 @@
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-:root{
-  font-family: "Vazir", sans-serif!important;
-  --bg:#DFDEE7;
-  --titleColor:#fff;
-  --btnBg:#0087C2;
-  --btnBgHover:#28a5db;
-  --btnColor:#fff;
-  --boxShadow:rgba(0, 0, 0, 0.116);
-  --articleBg:#F7FBFF;
-  --articleLittleBg:#fff;
-  --articleBorder:#363377;
-  --articleColor:#41417C;
-  --qnaColor:#413DA3;
+:root {
+  font-family: "Vazir", sans-serif !important;
+  --bg: #dfdee7;
+  --titleColor: #fff;
+  --btnBg: #0087c2;
+  --btnBgHover: #28a5db;
+  --btnColor: #fff;
+  --boxShadow: rgba(0, 0, 0, 0.116);
+  --articleBg: #f7fbff;
+  --articleLittleBg: #fff;
+  --articleBorder: #363377;
+  --articleColor: #41417c;
+  --qnaColor: #413da3;
   /* nav */
-    --navBg:#004f84;
-    --navHover:#0076A8;
-    --navColor:#ffffff;
-    --scrollColor:#a7a7a755;
+  --navBg: #004f84;
+  --navHover: #0076a8;
+  --navColor: #ffffff;
+  --scrollColor: #a7a7a755;
 }
-body{
+body {
   margin: 0;
-  background:var(--bg);
+  background: var(--bg);
   font-size: 62.5%;
-  font-family: "Vazir", sans-serif!important;
+  font-family: "Vazir", sans-serif !important;
   overflow: overlay;
-  
 }
 
-.boxShadow{
+.boxShadow {
   box-shadow: 0 10px 20px var(--boxShadow), 0 6px 6px var(--boxShadow);
 }
 

@@ -1,153 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 .hoc-countdown-main-content {
-	font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
-.hoc-countdown-subtitle{
-	font-size: .8rem;
-	color:#fff;
-	padding:1rem
+.hoc-countdown-subtitle {
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 1rem;
 }
-h2.hoc-countdown-subtitle{
-	padding-top:.3rem
+h2.hoc-countdown-subtitle {
+  padding-top: 0.3rem;
 }
 
-.hoc-countdown-main-content .hoc-countdown-container-countdown .hoc-countdown-mainCountdown {
-	display: flex;
-	flex-flow: row nowrap;
+.hoc-countdown-main-content
+  .hoc-countdown-container-countdown
+  .hoc-countdown-mainCountdown {
+  display: flex;
+  flex-flow: row nowrap;
 }
-.hoc-countdown-container-countdown{
-	display: flex;
-	margin-top: 1rem;
+.hoc-countdown-container-countdown {
+  display: flex;
+  margin-top: 1rem;
 }
-.hoc-countdown-mainCountdown{
-	display:flex;
+.hoc-countdown-mainCountdown {
+  display: flex;
 }
 .hoc-countdown-main-content .hoc-countdown-countdown-block {
-	align-items: center;
-	display: flex;
-	flex-flow: column nowrap;
-	margin-right: 0rem;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-right: 0rem;
 }
-
 
 .hoc-countdown-main-content .hoc-countdown-countdown-block:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
-.hoc-countdown-countdown-block{
-	margin:0;
+.hoc-countdown-countdown-block {
+  margin: 0;
 }
-
 
 .hoc-countdown-main-content .hoc-countdown-time-element {
-	background-color: #222;
-	border-radius: .2rem;
-	color: rgb(189, 189, 189);
-	font-size: 2.2rem;
-	height: 3rem;
-	line-height: 3rem;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-	width: 3.1rem;
+  background-color: #222;
+  border-radius: 0.2rem;
+  color: rgb(189, 189, 189);
+  font-size: 2.2rem;
+  height: 3rem;
+  line-height: 3rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 3.1rem;
 }
 
-.hoc-countdown-main-content .hoc-countdown-time-element::before, .hoc-countdown-main-content .hoc-countdown-time-element::after {
-	background: rgb(15, 15, 15);
-	border-radius: 50%;
-	content: "";
-	height: 10px;	
-	position: absolute;
-	top: calc(50% - 5px);
-	width: 10px;
-	z-index: 6;
+.hoc-countdown-main-content .hoc-countdown-time-element::before,
+.hoc-countdown-main-content .hoc-countdown-time-element::after {
+  background: rgb(15, 15, 15);
+  border-radius: 50%;
+  content: "";
+  height: 10px;
+  position: absolute;
+  top: calc(50% - 5px);
+  width: 10px;
+  z-index: 6;
 }
 
 .hoc-countdown-main-content .hoc-countdown-time-element::before {
-	left: -5px;
+  left: -5px;
 }
 
 .hoc-countdown-main-content .hoc-countdown-time-element::after {
-	right: -5px;
+  right: -5px;
 }
 
 .hoc-countdown-main-content .hoc-countdown-time-element > span {
-	left: 0;
-	position: absolute;
-	right: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 
 .hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-top {
-	background-color:#1a1a1a;
-	transform-origin: 50% 100%;
-	transform: perspective(200px);
-	z-index: 3;
+  background-color: #1a1a1a;
+  transform-origin: 50% 100%;
+  transform: perspective(200px);
+  z-index: 3;
 }
 
-.hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-top::after,
-.hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-bottom-back::after {
-	border-bottom: 1px solid #232323;
-	bottom: 0;
-	content: "";
-	height: 100%;
-	left: 0;
-	position: absolute;
-	width: 100%;
-	z-index: -1;
+.hoc-countdown-main-content
+  .hoc-countdown-time-element
+  .hoc-countdown-top::after,
+.hoc-countdown-main-content
+  .hoc-countdown-time-element
+  .hoc-countdown-bottom-back::after {
+  border-bottom: 1px solid #232323;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 .hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-bottom {
-	z-index: 1;
+  z-index: 1;
 }
 
-.hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-bottom::before {
-	background-color: #222;
-	content: "";
-	display: block;
-	height: 50%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
+.hoc-countdown-main-content
+  .hoc-countdown-time-element
+  .hoc-countdown-bottom::before {
+  background-color: #222;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
-.hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-bottom-back {
-	background-color: #222;
-	height: 50%;
-	overflow: hidden;
-	top: 0;
-	z-index: 2;
+.hoc-countdown-main-content
+  .hoc-countdown-time-element
+  .hoc-countdown-bottom-back {
+  background-color: #222;
+  height: 50%;
+  overflow: hidden;
+  top: 0;
+  z-index: 2;
 }
 
-.hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-bottom-back span {
-	bottom: 0;
-	left: 0;
-	margin: auto;
-	position: absolute;
-	right: 0;
-	top: 0;
+.hoc-countdown-main-content
+  .hoc-countdown-time-element
+  .hoc-countdown-bottom-back
+  span {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-top,
-    .hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-top-back {
-	backface-visibility: hidden;
-	height: 50%;
-	overflow: hidden;
+.hoc-countdown-main-content
+  .hoc-countdown-time-element
+  .hoc-countdown-top-back {
+  backface-visibility: hidden;
+  height: 50%;
+  overflow: hidden;
 }
 
-.hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-top-back {
-	background-color: #222;
-	bottom: 0;
-	transform-origin: 50% 0;
-	transform: perspective(200px) rotateX(180deg);
-	z-index: 4;
+.hoc-countdown-main-content
+  .hoc-countdown-time-element
+  .hoc-countdown-top-back {
+  background-color: #222;
+  bottom: 0;
+  transform-origin: 50% 0;
+  transform: perspective(200px) rotateX(180deg);
+  z-index: 4;
 }
 
-.hoc-countdown-main-content .hoc-countdown-time-element .hoc-countdown-top-back span {
-	left: 0;
-	margin: auto;
-	position: absolute;
-	right: 0;
-	top: -100%;
+.hoc-countdown-main-content
+  .hoc-countdown-time-element
+  .hoc-countdown-top-back
+  span {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: -100%;
 }
-
